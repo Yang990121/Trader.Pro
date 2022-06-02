@@ -1,0 +1,5 @@
+{ code: 'EAUTH', command: 'AUTH XOAUTH2', level: 'info' }
+{ code: 'EAUTH', command: 'AUTH XOAUTH2', level: 'info' }
+{ code: 'EAUTH', command: 'AUTH XOAUTH2', level: 'info' }
+{ level: 'info' }
+{ level: 'info' }

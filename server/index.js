@@ -1,21 +1,36 @@
-require("dotenv").config();
 const express = require("express");
 const app = express();
-const cors = require("cors");
-const connection = require("./db");
-const userRoutes = require("./routes/users");
-const authRoutes = require("./routes/auth");
+const path = require("path");
+const compression = require("compression");
 
-// database connection
-connection();
+const isProduction = process.env.NODE_ENV === "production";
 
-// middlewares
-app.use(express.json());
-app.use(cors());
+if (!isProduction) {
+  require("dotenv").config();
+}
 
-// routes
-app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
+// gzip compression of responses
+app.use(compression());
 
-const port = process.env.PORT || 8080;
-app.listen(port, console.log(`Listening on port ${port}...`));
+/* Redirect http to https */
+app.get("*", function (req, res, next) {
+  if (req.headers["x-forwarded-proto"] != "https" && isProduction)
+    res.redirect("https://" + req.hostname + req.url);
+  else next(); /* Continue to other routes if we're not redirecting */
+});
+
+require("./startup/logging")();
+require("./startup/config")();
+require("./startup/db")();
+require("./startup/routes")(app);
+
+if (isProduction) {
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log(`Server is running on port ${port}...`));

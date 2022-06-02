@@ -71,6 +71,7 @@ export default function SecondaryListItems() {
   const handleLogout = () => {
 		localStorage.removeItem("token");
 		window.location.reload();
+    window.location = "/login";
 	};
  
   const togglePopup = () => {

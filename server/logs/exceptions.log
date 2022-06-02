@@ -1,0 +1,2357 @@
+{
+  error: Error: `useFindAndModify` is an invalid option.
+      at Mongoose.set (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\index.js:183:11)
+      at module.exports (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\db.js:7:12)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js:24:24)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: `useFindAndModify` is an invalid option.\n' +
+    'Error: `useFindAndModify` is an invalid option.\n' +
+    '    at Mongoose.set (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js:183:11)\n' +
+    '    at module.exports (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js:7:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js:24:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: `useFindAndModify` is an invalid option.\n' +
+    '    at Mongoose.set (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js:183:11)\n' +
+    '    at module.exports (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js:7:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js:24:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Tue May 31 2022 19:46:20 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 12972,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65126400,
+      heapTotal: 35942400,
+      heapUsed: 21426064,
+      external: 23261457,
+      arrayBuffers: 18493321
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 580795 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose.set',
+      line: 183,
+      method: 'set',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 77,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: Error: `useCreateIndex` is an invalid option.
+      at Mongoose.set (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\index.js:183:11)
+      at module.exports (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\db.js:8:12)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js:24:24)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: `useCreateIndex` is an invalid option.\n' +
+    'Error: `useCreateIndex` is an invalid option.\n' +
+    '    at Mongoose.set (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js:183:11)\n' +
+    '    at module.exports (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js:8:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js:24:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: `useCreateIndex` is an invalid option.\n' +
+    '    at Mongoose.set (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js:183:11)\n' +
+    '    at module.exports (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js:8:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js:24:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Tue May 31 2022 19:48:16 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 17480,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65515520,
+      heapTotal: 36204544,
+      heapUsed: 21297280,
+      external: 23261457,
+      arrayBuffers: 18495373
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 580910 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose.set',
+      line: 183,
+      method: 'set',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\db.js',
+      function: 'module.exports',
+      line: 8,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 77,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../api/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:50:15 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 28868,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65327104,
+      heapTotal: 35942400,
+      heapUsed: 21878176,
+      external: 21838670,
+      arrayBuffers: 18493947
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581030 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../api/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:50:27 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 23748,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65208320,
+      heapTotal: 35942400,
+      heapUsed: 21885424,
+      external: 21838670,
+      arrayBuffers: 18502139
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581042 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../../middlewares/async'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\auth.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\auth.js:6:25)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../../middlewares/async'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../../middlewares/async'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js:6:25)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../../middlewares/async'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js:6:25)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:51:44 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 32288,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 68440064,
+      heapTotal: 55078912,
+      heapUsed: 28083528,
+      external: 22483069,
+      arrayBuffers: 18723034
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581118 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\auth.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../routes/user'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:5:15)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../routes/user'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../routes/user'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../routes/user'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:52:43 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 38372,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 70606848,
+      heapTotal: 56389632,
+      heapUsed: 28003896,
+      external: 23061105,
+      arrayBuffers: 18847456
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581177 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../../middlewares/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\users.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\users.js:5:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js:5:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js:5:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:53:29 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 31552,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 70377472,
+      heapTotal: 56389632,
+      heapUsed: 28059280,
+      external: 23077489,
+      arrayBuffers: 18863840
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581224 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js',
+      function: null,
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../../middlewares/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\users.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\routes\users.js:5:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js:5:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../../middlewares/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js:5:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:53:42 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 17952,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 73867264,
+      heapTotal: 55341056,
+      heapUsed: 33737576,
+      external: 23077489,
+      arrayBuffers: 19307002
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581237 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\routes\\users.js',
+      function: null,
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../routes/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:55:29 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 31728,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65810432,
+      heapTotal: 35942400,
+      heapUsed: 22043064,
+      external: 23268223,
+      arrayBuffers: 18504119
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581343 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../routes/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:55:37 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 35316,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65224704,
+      heapTotal: 35942400,
+      heapUsed: 21924664,
+      external: 21846862,
+      arrayBuffers: 18502139
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581351 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../routes/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../routes/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:55:57 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 23464,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65777664,
+      heapTotal: 36204544,
+      heapUsed: 21889312,
+      external: 21846862,
+      arrayBuffers: 18510331
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581371 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../api/auth'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../api/auth'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue May 31 2022 19:59:36 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 38628,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65257472,
+      heapTotal: 35680256,
+      heapUsed: 21942648,
+      external: 21846862,
+      arrayBuffers: 18510331
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 581591 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../api/users'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:5:15)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../api/users'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../api/users'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../api/users'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Wed Jun 01 2022 21:43:16 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 24396,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 70275072,
+      heapTotal: 56389632,
+      heapUsed: 27823000,
+      external: 23069297,
+      arrayBuffers: 18854395
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 6051 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module '../api'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js:5:15)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../api'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module '../api'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module '../api'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js:5:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Wed Jun 01 2022 21:44:01 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 17356,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 73822208,
+      heapTotal: 55341056,
+      heapUsed: 33699480,
+      external: 23069297,
+      arrayBuffers: 19290618
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 6097 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      function: null,
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
+{
+  error: Error: Cannot find module 'googleapis'
+  Require stack:
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\utils\sendMail.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\models\User.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\auth.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\startup\routes.js
+  - C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\utils\sendMail.js:2:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\models\\User.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\auth.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'googleapis'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\models\\User.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    "Error: Cannot find module 'googleapis'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\models\\User.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js:2:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'googleapis'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\models\\User.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\auth.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\startup\\routes.js\n' +
+    '- C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js:2:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Thu Jun 02 2022 19:55:36 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 7264,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 76005376,
+      heapTotal: 55341056,
+      heapUsed: 33701936,
+      external: 24490650,
+      arrayBuffers: 19291377
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 85992 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\utils\\sendMail.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ]
+}
