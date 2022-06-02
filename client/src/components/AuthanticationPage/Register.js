@@ -47,7 +47,10 @@ const Register = () => {
 					</Link>
 				</div>
 				<div className={styles.right}>
-					<form className={styles.form_container} onSubmit={handleSubmit}>
+					<form
+						className={styles.form_container}
+						onSubmit={handleSubmit}
+					>
 						<h1>Create Account</h1>
 						<input
 							type="text"
@@ -85,7 +88,9 @@ const Register = () => {
 							required
 							className={styles.input}
 						/>
-						{error && <div className={styles.error_msg}>{error}</div>}
+						{error && (
+							<div className={styles.error_msg}>{error}</div>
+						)}
 						<button type="submit" className={styles.green_btn}>
 							Sing Up
 						</button>

@@ -33,7 +33,10 @@ const Login = () => {
 		<div className={styles.login_container}>
 			<div className={styles.login_form_container}>
 				<div className={styles.left}>
-					<form className={styles.form_container} onSubmit={handleSubmit}>
+					<form
+						className={styles.form_container}
+						onSubmit={handleSubmit}
+					>
 						<h1>Login to Your Account</h1>
 						<input
 							type="email"
@@ -53,7 +56,9 @@ const Login = () => {
 							required
 							className={styles.input}
 						/>
-						{error && <div className={styles.error_msg}>{error}</div>}
+						{error && (
+							<div className={styles.error_msg}>{error}</div>
+						)}
 						<button type="submit" className={styles.green_btn}>
 							Sing In
 						</button>

@@ -1,119 +1,115 @@
 .Description {
-  text-align: left;
-  padding-left: 30px;
+	text-align: left;
+	padding-left: 30px;
 }
 
 .ScriptButton {
-    padding: 5% 20%;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
-    grid-gap:20px;
+	padding: 5% 20%;
+	display: grid;
+	grid-template-columns: 1fr 0.1fr;
+	grid-gap: 20px;
 }
 
 .DownloadLink {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .Header {
-    color: #ef7c00;
+	color: #ef7c00;
 }
 
 /* Modal Button */
 .modalButton {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    padding: 12px 24px;
-  }
-  
-  
-  /* Modal */
-  .overlay {
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .modalContainer {
-    max-width: 600px;
-    width: 100%;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-35%, -35%);
-    display: flex;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 8px;
-  }
-  
-  img {
-    width: 250px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  
-  .modalRight {
-    width: 100%;
-  }
-  
-  .closeBtn {
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    cursor:pointer;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3rem;
-    padding: 0rem 2rem;
-  }
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	padding: 12px 24px;
+}
 
+/* Modal */
+.overlay {
+	/* background-color: rgba(0, 0, 0, 0.5); */
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
 
-  .ScriptDescription {
-    background: #f0efef;
-    text-align: left;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
+.modalContainer {
+	max-width: 600px;
+	width: 100%;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-35%, -35%);
+	display: flex;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 8px;
+}
 
-  }
-  
-  .btnContainer {
-    display: flex;
-    padding: 0rem 1rem;
-  }
-  .btnContainer button {
-    width: 100%;
-    margin: .5rem;
-    padding: 16px 0;
-    /* border: none; */
-    border: 1px solid #337ab7;
-    /* color: #ffffff; */
-    cursor:pointer;
-  }
-  
-  .btnPrimary {
-    background-color: #337ab7;
-    color: white;
-    height: 70px;
-  }
-  
-  .btnOutline {
-    /* background-color: #a76a99; */
-    background-color: white;
-    color: #337ab7;
-  }
-  
-  .bold {
-    font-weight: 600;
-  }
-  
+img {
+	width: 250px;
+	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.modalRight {
+	width: 100%;
+}
+
+.closeBtn {
+	position: fixed;
+	top: 8px;
+	right: 8px;
+	cursor: pointer;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 3rem;
+	padding: 0rem 2rem;
+}
+
+.ScriptDescription {
+	background: #f0efef;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px #ccc;
+	padding: 10px;
+}
+
+.btnContainer {
+	display: flex;
+	padding: 0rem 1rem;
+}
+.btnContainer button {
+	width: 100%;
+	margin: 0.5rem;
+	padding: 16px 0;
+	/* border: none; */
+	border: 1px solid #337ab7;
+	/* color: #ffffff; */
+	cursor: pointer;
+}
+
+.btnPrimary {
+	background-color: #337ab7;
+	color: white;
+	height: 70px;
+}
+
+.btnOutline {
+	/* background-color: #a76a99; */
+	background-color: white;
+	color: #337ab7;
+}
+
+.bold {
+	font-weight: 600;
+}
