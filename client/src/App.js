@@ -20,6 +20,9 @@ import Toast from "./components/common/Toast";
 // import DiscoverPage from "./pages/DiscoverPage";
 // import NewsPage from "./pages/NewsPage";
 
+
+
+
 function App() {
   const user = localStorage.getItem("token");
   const dispatch = useDispatch();
@@ -39,12 +42,13 @@ function App() {
 
         {/* Public Routes */}
         
-          <Route path="*" element={<SignIn />}/> 
+          
           <Route path="register" element={<SignUp />}/>
           <Route path="/resetPassword/:token" element={<ResetPassword />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/unverified-user" element={<NotVerified />} />
           <Route path="/confirmEmail/:token" element={<ConfirmEmail />} />
+          <Route path="*" element={<SignIn />}/> 
           
         
 
@@ -56,7 +60,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />}/>
           <Route path="Discover" element={<Discover />} />
           <Route path="News" element={<News />} />
-          <Route path ="*" element={<Dashboard />} />
+          
         </Route>
 
         

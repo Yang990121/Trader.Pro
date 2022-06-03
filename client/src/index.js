@@ -16,7 +16,7 @@ import { setCurrentUser } from "./components/actions/authActions"
 // Check for Token
 if (getJwt()) {
   // Set auth token in http headers
-  http.setJwt(getJwt());
+  // http.setJwt(getJwt());
   // Decode token and get user info and expression
   const decoded = getCurrentUser();
   // Set user and isAuthenticated
@@ -34,11 +34,11 @@ if (getJwt()) {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
   <Provider store = {store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
     </Provider>
-  </React.StrictMode>
+  
 );
