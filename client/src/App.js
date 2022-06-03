@@ -38,7 +38,7 @@ function App() {
         
 
         {/* Public Routes */}
-        <Route path ="/" element={<PublicRoute/>} >
+        
           <Route path="*" element={<SignIn />}/> 
           <Route path="register" element={<SignUp />}/>
           <Route path="/resetPassword/:token" element={<ResetPassword />} />
@@ -46,7 +46,7 @@ function App() {
           <Route path="/unverified-user" element={<NotVerified />} />
           <Route path="/confirmEmail/:token" element={<ConfirmEmail />} />
           
-        </Route>
+        
 
 
 

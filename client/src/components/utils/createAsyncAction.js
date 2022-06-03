@@ -1,7 +1,7 @@
 import { setLoading, unSetLoading } from "../actions/uiActions";
 import toastify from "./toastNotification";
 
-export default function (asyncFunction, handleSuccessResponse) {
+export default function createAsync (asyncFunction, handleSuccessResponse) {
   return (data) => (dispatch) => {
     dispatch(setLoading());
     asyncFunction(data).then(
