@@ -12,6 +12,30 @@ const {
 const { jwtPrivateKey, tokenKey } = process.env;
 const isProduction = process.env.NODE_ENV === "production";
 
+const stockSchema = new Schema({
+  userId: {
+    type: String,
+    required: true,
+  },
+  ticker: {
+    type: String,
+    required: true,
+  },
+  quantity: {
+    type: Number,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now(),
+  },
+});
+
+
 const userSchema = new Schema({
   userName: {
     type: String,
@@ -32,6 +56,19 @@ const userSchema = new Schema({
     type: Boolean,
     default: false,
   },
+  cashBalance: {
+    type: Number,
+    default: 100000,
+    required: false,
+  },
+  portfolioBalance: {
+    type: Number,
+    default: 0,
+    required: false,
+  },
+  stockPurchased: [
+    stockSchema
+  ],
 });
 
 userSchema.methods.generateAuthToken = function (secretKey = jwtPrivateKey) {
