@@ -43,8 +43,7 @@ export default function Register() {
   const isLoading = useSelector((state) => state.uiState.isLoading); //allows you to extract data from the redux store state
 
   const validationSchema = { //basically conditions that have to be met to pass the validation
-    firstName: Joi.string().min(3).max(255).required().label("First Name"),
-    lastName: Joi.string().min(3).max(255).required().label("Last Name"),
+    userName: Joi.string().min(3).max(255).required().label("First Name"),
     email: Joi.string().email({tlds : { allow : false}}).required().label("Email Address"),
     password: Joi.string().min(6).max(255).required().label("Password"),
     confirmPassword: Joi.any()
@@ -62,8 +61,7 @@ export default function Register() {
     handleFocus,
   } = useForm({ //form that can be submitted if it meets the validation schema, done through doSubmit
     initialValues: {
-      firstName: "",
-      lastName: "",
+      userName: "",
       email: "",
       password: "",
       confirmPassword: "",
@@ -94,39 +92,22 @@ export default function Register() {
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit} noValidate>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12}>
               <TextField
                 autoComplete="fname"
-                name="firstName"
+                name="userName"
                 variant="outlined"
                 required
                 fullWidth
-                id="firstName"
-                label="First Name"
+                id="userName"
+                label="User Name"
                 autoFocus
-                value={values.firstName}
-                error={errors.firstName !== undefined}
-                helperText={errors.firstName}
+                value={values.userName}
+                error={errors.userName !== undefined}
+                helperText={errors.userName}
                 onChange={handleChange}
                 onFocus={handleFocus} //mouse in the box
                 onBlur={handleBlur}//mouse out of box
-              />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
-                value={values.lastName}
-                error={errors.lastName !== undefined}
-                helperText={errors.lastName}
-                onChange={handleChange}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
               />
             </Grid>
             <Grid item xs={12}>

@@ -13,11 +13,7 @@ const { jwtPrivateKey, tokenKey } = process.env;
 const isProduction = process.env.NODE_ENV === "production";
 
 const userSchema = new Schema({
-  firstName: {
-    type: String,
-    required: true,
-  },
-  lastName: {
+  userName: {
     type: String,
     required: true,
   },
@@ -42,7 +38,7 @@ userSchema.methods.generateAuthToken = function (secretKey = jwtPrivateKey) {
   const token = jwt.sign(
     {
       id: this._id,
-      name: this.firstName,
+      name: this.userName,
       isVerified: this.isVerified,
     },
     secretKey,
@@ -73,8 +69,8 @@ userSchema.methods.sendResetPasswordEmail = async function (hostname) {
 
 const validateUser = function (user) {
   const schema = Joi.object({
-    firstName: Joi.string().min(3).max(255).required(),
-    lastName: Joi.string().min(3).max(255).required(),
+    userName: Joi.string().min(3).max(255).required(),
+    
     email: Joi.string().email().max(255).required(),
     password: Joi.string().min(6).max(255).required(),
   });

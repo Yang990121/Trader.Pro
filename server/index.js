@@ -19,10 +19,11 @@ app.get("*", function (req, res, next) {
   else next(); /* Continue to other routes if we're not redirecting */
 });
 
+require("./startup/routes")(app);
 require("./startup/logging")();
 require("./startup/config")();
 require("./startup/db")();
-require("./startup/routes")(app);
+
 
 if (isProduction) {
   app.use(express.static("client/build"));

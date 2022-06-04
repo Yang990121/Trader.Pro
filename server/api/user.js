@@ -30,8 +30,7 @@ router.post(
     const hashedPasword = await bcrypt.hash(req.body.password, salt);
 
     const newUser = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
+      userName: req.body.userName,
       email: req.body.email,
       password: hashedPasword,
     };
