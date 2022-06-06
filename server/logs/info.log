@@ -13,3 +13,30 @@
 { level: 'info' }
 { level: 'info' }
 { level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{ level: 'info' }
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n' +
+    '    "userId" : "629c3829ca349e9e22e15bf7",\r\n' +
+    '    "newPrice": 2000,\r\n' +
+    '    "newQuantity" : 150,\r\n' +
+    '    "ticker": AAPL\r\n' +
+    '    \r\n' +
+    '}',
+  type: 'entity.parse.failed',
+  level: 'info'
+}

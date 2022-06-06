@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
+app.use(express.json());
 const path = require("path");
 const compression = require("compression");
+const { userInfo } = require("os");
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -11,6 +13,7 @@ if (!isProduction) {
 
 // gzip compression of responses
 app.use(compression());
+
 
 /* Redirect http to https */
 app.get("*", function (req, res, next) {
@@ -35,3 +38,15 @@ if (isProduction) {
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Server is running on port ${port}...`));
+
+app.get("/info", async (req, res) => {
+  User.find({}, (err, users) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(users);
+    }
+  });
+});
+
+  //User model

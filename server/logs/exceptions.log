@@ -2355,3 +2355,1695 @@
     }
   ]
 }
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 02:59:49 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 21844,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 93798400,
+      heapTotal: 61087744,
+      heapUsed: 58337064,
+      external: 19529218,
+      arrayBuffers: 18408830
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457048 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:05:37 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 7740,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 124944384,
+      heapTotal: 91234304,
+      heapUsed: 69555976,
+      external: 29516711,
+      arrayBuffers: 18847853
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457396 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:06:14 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 3868,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 124944384,
+      heapTotal: 91234304,
+      heapUsed: 69438736,
+      external: 34916396,
+      arrayBuffers: 18847874
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457433 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot read properties of null (reading '0')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:23
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of null (reading '0')\n" +
+    "TypeError: Cannot read properties of null (reading '0')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:23\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot read properties of null (reading '0')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:23\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:10:29 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 35496,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 94654464,
+      heapTotal: 61874176,
+      heapUsed: 58599112,
+      external: 19459867,
+      arrayBuffers: 18339479
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457688 },
+  trace: [
+    {
+      column: 23,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot read properties of null (reading '0')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:23
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot read properties of null (reading '0')\n" +
+    "TypeError: Cannot read properties of null (reading '0')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:23\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot read properties of null (reading '0')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:23\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:14:10 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 16612,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125497344,
+      heapTotal: 91496448,
+      heapUsed: 67855808,
+      external: 26880288,
+      arrayBuffers: 18937191
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457909 },
+  trace: [
+    {
+      column: 23,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:114:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:114:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:15:06 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 10444,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 124723200,
+      heapTotal: 90972160,
+      heapUsed: 68229744,
+      external: 26876442,
+      arrayBuffers: 18797621
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 457965 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 114,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:115:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:115:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:115:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:15:44 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 32848,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 126541824,
+      heapTotal: 92282880,
+      heapUsed: 65001240,
+      external: 43624469,
+      arrayBuffers: 18764186
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458003 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 115,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:116:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:16:24 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 18264,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125005824,
+      heapTotal: 91234304,
+      heapUsed: 67723600,
+      external: 26901586,
+      arrayBuffers: 18937074
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458043 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 116,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:116:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:17:10 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 6748,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125079552,
+      heapTotal: 91496448,
+      heapUsed: 69260536,
+      external: 34937775,
+      arrayBuffers: 18975052
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458089 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 116,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:116:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:17:46 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 11252,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125415424,
+      heapTotal: 91496448,
+      heapUsed: 68007752,
+      external: 24786044,
+      arrayBuffers: 18891803
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458125 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 116,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'cashBalance')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:116:36
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'cashBalance')\n" +
+    "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'cashBalance')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:116:36\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:18:43 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 35340,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 93487104,
+      heapTotal: 61087744,
+      heapUsed: 58003616,
+      external: 19543672,
+      arrayBuffers: 18329113
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458182 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 116,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:372:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\express\lib\response.js:794:10)
+      at ServerResponse.send (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\express\lib\response.js:174:12)
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:118:13
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:372:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:794:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:174:12)\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:118:13\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:372:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:794:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:174:12)\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:118:13\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:23:27 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 23708,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 94019584,
+      heapTotal: 61349888,
+      heapUsed: 58583832,
+      external: 19794272,
+      arrayBuffers: 18410148
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458466 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 372,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 794,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 174,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 118,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:372:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\express\lib\response.js:794:10)
+      at ServerResponse.send (C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\express\lib\response.js:174:12)
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:118:13
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:372:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:794:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:174:12)\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:118:13\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:372:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at ServerResponse.header (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:794:10)\n' +
+    '    at ServerResponse.send (C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js:174:12)\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:118:13\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 03:24:53 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 28136,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125722624,
+      heapTotal: 91758592,
+      heapUsed: 67898048,
+      external: 26860658,
+      arrayBuffers: 18956455
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 458552 },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 372,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.header',
+      line: 794,
+      method: 'header',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\express\\lib\\response.js',
+      function: 'ServerResponse.send',
+      line: 174,
+      method: 'send',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 118,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: ReferenceError: price is not defined
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:32
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: price is not defined\n' +
+    'ReferenceError: price is not defined\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:32\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'ReferenceError: price is not defined\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:32\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 04:53:13 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 11380,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 94158848,
+      heapTotal: 61087744,
+      heapUsed: 58384408,
+      external: 19553646,
+      arrayBuffers: 18325188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 463851 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedBalance.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:24
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedBalance.save is not a function\n' +
+    'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 04:54:15 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 21968,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125468672,
+      heapTotal: 91496448,
+      heapUsed: 67860024,
+      external: 26877599,
+      arrayBuffers: 18948287
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 463914 },
+  trace: [
+    {
+      column: 24,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedBalance.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:24
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedBalance.save is not a function\n' +
+    'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:03:11 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 34828,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125779968,
+      heapTotal: 91496448,
+      heapUsed: 67691288,
+      external: 26844094,
+      arrayBuffers: 18938278
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 464450 },
+  trace: [
+    {
+      column: 24,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedBalance.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:24
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedBalance.save is not a function\n' +
+    'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedBalance.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:24\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:05:08 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 19480,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 127086592,
+      heapTotal: 93069312,
+      heapUsed: 63387752,
+      external: 37943244,
+      arrayBuffers: 18807004
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 464567 },
+  trace: [
+    {
+      column: 24,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:05:47 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 27048,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125468672,
+      heapTotal: 91496448,
+      heapUsed: 68028264,
+      external: 26866620,
+      arrayBuffers: 18923523
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 464606 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:08:05 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 26240,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 93257728,
+      heapTotal: 61087744,
+      heapUsed: 58101664,
+      external: 19558469,
+      arrayBuffers: 18329436
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 464743 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:13:13 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 13404,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 95023104,
+      heapTotal: 62136320,
+      heapUsed: 58981112,
+      external: 19783746,
+      arrayBuffers: 18357224
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465052 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:13:28 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 25148,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125440000,
+      heapTotal: 91758592,
+      heapUsed: 68542968,
+      external: 26866192,
+      arrayBuffers: 18924708
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465067 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:14:28 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 30256,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 126033920,
+      heapTotal: 91758592,
+      heapUsed: 68210616,
+      external: 26869627,
+      arrayBuffers: 18934722
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465127 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:16:07 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 15440,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125612032,
+      heapTotal: 91496448,
+      heapUsed: 68056680,
+      external: 26867364,
+      arrayBuffers: 18932459
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465225 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: updatedStock.save is not a function
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:160:22
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: 'uncaughtException: updatedStock.save is not a function\n' +
+    'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'TypeError: updatedStock.save is not a function\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:160:22\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:17:31 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 33836,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125906944,
+      heapTotal: 91758592,
+      heapUsed: 68105368,
+      external: 26845417,
+      arrayBuffers: 18939601
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465310 },
+  trace: [
+    {
+      column: 22,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 05:23:16 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 24392,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125747200,
+      heapTotal: 91234304,
+      heapUsed: 69225928,
+      external: 24486146,
+      arrayBuffers: 18962218
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 465655 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
