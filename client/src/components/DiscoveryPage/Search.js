@@ -3,7 +3,7 @@ import { Card } from "@material-ui/core/";
 import { TextField } from '@mui/material';
 import { Grid } from '@mui/material';
 import { Container } from '@mui/material';
-import axios from "axios";
+import axios, { Axios } from "axios";
 import DiscoverApp from './DiscoverApp';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import Button from '@mui/material/Button';
@@ -14,6 +14,10 @@ import LineChart from './LineChart';
 import BarChart from './BarChart';
 import "./DiscoveryPage.css";
 import BuyPage from './BuyPage';
+import { getUser } from "../services/userService"
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -58,14 +62,48 @@ const BarChartCard = ({ pastDataPeriod, stockInfo, duration }) => {
   };
 
 function Search() {
-    
+    const { isAuthenticated, user } = useSelector((state) => state.auth); 
     const [stockSearch, setStockSearch] = useState("");
     const [stockData, setStockData] = useState({});
     const [stockPrice, setStockPrice] = useState ({});
     const [stockCompany, setStockCompany] = useState ({});
     const [stockLogo, setStockLogo] = useState ({});
+    const [currentUser, setCurrentUser] = useState({});
+    const [currentStocks, setCurrentStocks] = useState({});
+    
 
     const [openBuy, setBuy] = useState(false);
+
+    var userURL = "http://localhost:3001/api/users/find/";
+    var userId = user.id;
+    var finalURL = userURL + String(userId)
+
+    var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
+    var StocksHeldURL = stockOwnURL + String(userId);
+    
+
+    useEffect(() => {
+        axios.get(StocksHeldURL).then((response) => {
+            setCurrentStocks(response.data);
+        });
+    }, []);
+
+
+
+   useEffect(() => {
+       axios.get(finalURL).then((response) => {
+           setCurrentUser(response.data)
+       });
+   }, []);
+    
+   const stockOwned = () => {
+    for (let i = 0; i < currentStocks.length; i++) {
+        if (currentStocks[i].ticker === stockData.symbol) {
+            return i
+        }
+    }
+    return -1
+}
     
     function searchForStock(event) {
         // Setting up the correct API call
@@ -118,6 +156,8 @@ function Search() {
             console.log(error);
         })
     }
+
+   
 
     return (
         <div>
@@ -206,7 +246,7 @@ function Search() {
                             </div>
                             </Item>: null}
                     </Grid>
-                    <BuyPage open={openBuy}  onClose={() => setBuy(false)} stock={stockData}  />
+                    <BuyPage open={openBuy} onClose={() => setBuy(false)} stock={stockData} user = {currentUser[0]} stocksHeld = {currentStocks} index = {stockOwned()}/>
                     <Grid item xs={8}>
                     
                         {JSON.stringify(stockData) != "{}" ? 

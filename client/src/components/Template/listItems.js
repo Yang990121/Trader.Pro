@@ -22,7 +22,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 export const mainListItems = (
   <React.Fragment>
     <nav>
-      <Link className='navName' to="/" >
+      <Link className='navName' to="/dashboard" >
       <ListItemButton>
         <ListItemIcon>
           <DashboardIcon />

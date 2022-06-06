@@ -65,6 +65,7 @@ export default function Register() {
       email: "",
       password: "",
       confirmPassword: "",
+      
     },
     validationSchema,
     doSubmit,

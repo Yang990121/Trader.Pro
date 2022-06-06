@@ -7,3 +7,7 @@ export function saveUser(user) {
 export function getUser() {
   return http.get("/api/users/me");
 }
+
+export function updateStock(stock) {
+  return http.post("/api/users/updateStock", stock);
+ }
