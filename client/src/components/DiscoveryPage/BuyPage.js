@@ -103,6 +103,7 @@ const BuyPage = ({
         updateBalance()
         console.log(stocksHeld)
         console.log(stocksHeld[0].price)
+        window.location.reload()
     }
 
 
