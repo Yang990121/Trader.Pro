@@ -78,6 +78,7 @@ function Search() {
     var userId = user.id;
     var finalURL = userURL + String(userId)
 
+    
     var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
     var StocksHeldURL = stockOwnURL + String(userId);
     
@@ -108,7 +109,7 @@ function Search() {
     function searchForStock(event) {
         // Setting up the correct API call
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_a78db42ce2414fe5a55dce3a1891af53";
+        const apiKey = "pk_28efde6e66604c718ff27ba2b2dea114";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + stockSearch + urlBack;
 
