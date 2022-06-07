@@ -158,6 +158,8 @@ function Search() {
         })
     }
 
+    console.log(currentStocks)
+
    
 
     return (

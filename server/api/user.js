@@ -154,7 +154,7 @@ router.put(
     try {
       console.log(req.body)
       await Stock.findById(id, (err, updatedStock) => {
-        console.log(updatedStock)
+        console.log("This is the stock that will be updated" + updatedStock)
         updatedStock.price = newPrice;
         updatedStock.quantity = newQuantity;
         updatedStock.save();

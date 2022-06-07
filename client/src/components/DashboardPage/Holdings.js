@@ -39,7 +39,19 @@ export default function Holdings() {
     const [sellStock, setSellStock] = useState("");
     const [sellQuantity, setQuantity] = useState(0);
     const [currentStocks, setCurrentStocks] = useState({});
-    const { isAuthenticated, user } = useSelector((state) => state.auth);
+    const [currentUser, setCurrentUser] = useState({});
+    const { isAuthenticated, user } = useSelector((state) => state.auth); 
+    
+    //Finding user (for sell page)
+    var userURL = "http://localhost:3001/api/users/find/";
+    var userId = user.id;
+    var finalURL = userURL + String(userId)
+
+    useEffect(() => {
+        axios.get(finalURL).then((response) => {
+            setCurrentUser(response.data)
+        });
+    }, []);
 
     // function handleSell() {
     //     setSell(true);
@@ -50,6 +62,7 @@ export default function Holdings() {
         setSell(true);
         setSellStock(stock);
         setQuantity(quantity);
+
     }
 
     //Getting the list of stocks the user owns
@@ -109,7 +122,7 @@ export default function Holdings() {
 
   return (
     <React.Fragment>
-      <Title>{Testing("AAPL")}</Title>
+      <Title>Stocks in your Portfolio</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -127,7 +140,7 @@ export default function Holdings() {
         {currentStocksArray.map((row) => {
           
             const purchaseTotal = row.price * row.quantity;
-          
+    
             return (
                 <TableRow key={row.id}>
               <TableCell>{row.ticker}</TableCell>
@@ -144,9 +157,10 @@ export default function Holdings() {
                     onClick={() => handleSell(row.ticker, row.quantity)} >
                         Sell
                     </Button>
+                   
+                    
               </TableCell>
-              {row.ticker}
-              <SellPage open={openSell} onClose={() => setSell(false)} stock={sellStock} quantity={sellQuantity}/>
+              <SellPage open={openSell} onClose={() => setSell(false)} stock={sellStock} quantity={sellQuantity} user={currentUser[0]} stocksHeld={currentStocks}/>
             </TableRow>
             )
             

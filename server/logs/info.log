@@ -40,3 +40,16 @@
   type: 'entity.parse.failed',
   level: 'info'
 }
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n' +
+    '    "userId": "Postman",\r\n' +
+    '        "price": 50,\r\n' +
+    '        "quantity": 888,\r\n' +
+    '        "ticker": "AAPL",\r\n' +
+    '}',
+  type: 'entity.parse.failed',
+  level: 'info'
+}

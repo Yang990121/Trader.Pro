@@ -4047,3 +4047,451 @@
     }
   ]
 }
+{
+  error: TypeError: Cannot set properties of undefined (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of undefined (setting 'price')\n" +
+    "TypeError: Cannot set properties of undefined (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of undefined (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:07:19 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 36100,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 95416320,
+      heapTotal: 62922752,
+      heapUsed: 60521088,
+      external: 23000324,
+      arrayBuffers: 18450467
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 529498 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:28:59 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 3140,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 97034240,
+      heapTotal: 63709184,
+      heapUsed: 60889128,
+      external: 21115494,
+      arrayBuffers: 18450695
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 530798 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:30:18 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 16104,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125788160,
+      heapTotal: 91496448,
+      heapUsed: 67452304,
+      external: 26787654,
+      arrayBuffers: 18895769
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 530877 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:33:11 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 22988,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 93995008,
+      heapTotal: 61087744,
+      heapUsed: 58469800,
+      external: 19617997,
+      arrayBuffers: 18427701
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 531050 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:34:09 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 16096,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 125800448,
+      heapTotal: 91496448,
+      heapUsed: 67516416,
+      external: 26855725,
+      arrayBuffers: 18931064
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 531107 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:39:50 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 13792,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 94380032,
+      heapTotal: 61087744,
+      heapUsed: 56587608,
+      external: 19936324,
+      arrayBuffers: 18338649
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 531449 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: TypeError: Cannot set properties of null (setting 'price')
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\api\user.js:158:28
+      at C:\Users\yujie\Desktop\NUS\Y1 Summer Break Stuff\Finance App\latest Trader.pro\Trader.Pro\server\node_modules\mongoose\lib\model.js:4994:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  level: 'error',
+  message: "uncaughtException: Cannot set properties of null (setting 'price')\n" +
+    "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: "TypeError: Cannot set properties of null (setting 'price')\n" +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js:158:28\n' +
+    '    at C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js:4994:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Tue Jun 07 2022 23:43:22 GMT+0800 (Singapore Standard Time)',
+  process: {
+    pid: 7192,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 94228480,
+      heapTotal: 61087744,
+      heapUsed: 58500560,
+      external: 19715408,
+      arrayBuffers: 18337924
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 531661 },
+  trace: [
+    {
+      column: 28,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\api\\user.js',
+      function: null,
+      line: 158,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\yujie\\Desktop\\NUS\\Y1 Summer Break Stuff\\Finance App\\latest Trader.pro\\Trader.Pro\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: null,
+      line: 4994,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ]
+}
