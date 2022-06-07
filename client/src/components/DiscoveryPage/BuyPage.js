@@ -152,7 +152,7 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
           </div>{" "}
         </div>{" "}
       </div>{" "}
-      <ConfirmPage open={confirm} onClose={() => setConfirm(false)}  stock={stock}/>
+      <ConfirmPage open={confirm} onClose={() => setConfirm(false)}  stock={stock}  user={user} stocksHeld={stocksHeld} index={index} amount={amount}/>
     </div>
   );
 };
