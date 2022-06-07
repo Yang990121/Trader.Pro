@@ -59,7 +59,7 @@ function Search() {
 	function searchForStock(event) {
 		// Setting up the correct API call
 		var urlFront = "https://cloud.iexapis.com/stable/stock/";
-		const apiKey = "pk_355f42cace3c407abd220a5746c91f93";
+		const apiKey = "pk_a78db42ce2414fe5a55dce3a1891af53";
 		var urlBack = `/quote?token=${apiKey}`;
 		var url = urlFront + stockSearch + urlBack;
 
