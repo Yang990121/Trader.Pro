@@ -148,7 +148,7 @@ const handleClick = () => {
           </div>
         </div>
       </div>
-      <ConfirmPage open={confirm} onClose={() => setConfirm(false)} stock={stock} />
+      <ConfirmPage open={confirm} onClose={() => setConfirm(false)} stock={stock} quantity ={quantity} user = {user} stocksHeld = {stocksHeld} amount = {amount} />
     </div>
   );
 };
