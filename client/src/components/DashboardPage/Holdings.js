@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { useState } from "react";
 import Link from "@mui/material/Link";
@@ -15,6 +16,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import Button from '@mui/material/Button';
 import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
+import CreateRow from "./createRow";
 
 
 
@@ -63,21 +65,14 @@ export default function Holdings() {
   }, []);
 
   
+  var currentStocksArray = [];
 
+  for (let i = 0; i < currentStocks.length; i++) {
+    currentStocksArray.push(currentStocks[i]);
+  }
 
- 
+  console.log(currentStocksArray);
 
-  console.log(tickerStrings);
-
-  //Getting the price
-
-var currentStocksArray = [];
-
-for (let i = 0; i < currentStocks.length; i++) {
-  currentStocksArray.push(currentStocks[i].ticker);
-}
-
-console.log("currentStocksArray", currentStocksArray);
 
 //Ticker Strings
 var tickerStrings = "";
@@ -85,12 +80,16 @@ var tickerStrings = "";
 for (let i = 0; i < currentStocksArray.length; i++) {
   if (currentStocksArray[i] !== undefined) {
     if (i !== currentStocksArray.length - 1) {
-    tickerStrings = tickerStrings + currentStocksArray[i] + ",";
+    tickerStrings = tickerStrings + currentStocksArray[i].ticker + ",";
     } else {
-    tickerStrings = tickerStrings + currentStocksArray[i];
+    tickerStrings = tickerStrings + currentStocksArray[i].ticker;
     }
 }
 }
+
+console.log(tickerStrings);
+
+
  //Getting price 
        useEffect(() => {
         const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
@@ -101,20 +100,22 @@ for (let i = 0; i < currentStocksArray.length; i++) {
       .catch((error) => console.log(error));
     }, []);
 
+console.log(stockArray)
 
+const latestPriceDict = {}
 
-console.log("stockArray",stockArray)
-
-for (let i = 0; i < currentStocksArray.length; i++) {
-  if (currentStocksArray[i] !== undefined) {
-    currentStocks[i]["latestPrice"] = stockArray[currentStocksArray[i]].quote.latestPrice;
-  }
+for (const [key, value] of Object.entries(stockArray)) {
+  latestPriceDict[key] = value.quote.latestPrice;
 }
 
+// for (const [key,value] i < stockArray.length; i++) {
+//   if (stockArray[i] !== undefined) {
+//     latestPriceDict[stockArray[i].quote.symbol] = stockArray[i].quote.latestPrice;
+//   }
+// }
+console.log(latestPriceDict)
 
 
-
-console.log("currentStocks", currentStocks);
 
   //Row making function
   function createData(
@@ -143,15 +144,15 @@ console.log("currentStocks", currentStocks);
 
   //Final row to be mapped
   
-//   console.log(currentStocksArray.map((stock) => {return Testing(stock.ticker)}))
 
-    
-  
 
     
 
-  return (
+
+ 
+return (
     <React.Fragment>
+   
       <Title>Stocks in your Portfolio</Title>
       <Table size="small">
         <TableHead>
@@ -167,9 +168,16 @@ console.log("currentStocks", currentStocks);
           </TableRow>
         </TableHead>
         <TableBody>
-        {currentStocks.map((row) => {
-          
-            const purchaseTotal = row.price * row.quantity;
+        {currentStocksArray.map((row) => {
+
+            const currentPrice = latestPriceDict[row.ticker];
+  
+            const difference =
+                (currentPrice - row.price) / currentPrice;
+              const purchaseTotal =
+                Number(row.quantity) * Number(row.price);
+              const currentTotal =
+                Number(row.quantity) * Number(currentPrice);
     
             return (
                 <TableRow key={row.id}>
@@ -177,8 +185,8 @@ console.log("currentStocks", currentStocks);
               <TableCell>{row.quantity}</TableCell>
               <TableCell>{`$${row.price}`}</TableCell>
               <TableCell>{`$${row.price * row.quantity}`}</TableCell>
-              <TableCell align="right">{`$${row.latestPrice}`}</TableCell>
-              <TableCell align="right">{`$${row.latestPrice * row.quantity}`}</TableCell>
+              <TableCell align="right">{`$${currentPrice}`}</TableCell>
+              <TableCell align="right">{`$${row.priceTotal}`}</TableCell>
               <TableCell align="right">{row.difference}</TableCell>
               <TableCell align="right">
                 <Button 
