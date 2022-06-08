@@ -7,7 +7,7 @@ const Joi = require("@hapi/joi");
 
 const asyncMiddleware = require("../middlewares/async");
 const auth = require("../middlewares/auth");
-const User = require("../models/User");
+const User = require("../models/user");
 const { verifyToken } = require("../middlewares/auth");
 
 router.post(

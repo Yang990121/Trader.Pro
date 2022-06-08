@@ -15,25 +15,6 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import Button from '@mui/material/Button';
 import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
-import CreateRow from "./createRow";
-
-
-//Getting the price
-function Testing (ticker) {
-    const [testing, setTesting] = useState(0);
-       useEffect(() => {
-           var urlFront = "https://cloud.iexapis.com/stable/stock/";
-           const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
-           var urlBack = `/quote?token=${apiKey}`;
-           var url = urlFront + ticker + urlBack;
-     axios
-      .get(url)
-      .then((response) => setTesting(response.data.latestPrice))
-      .catch((error) => console.log(error));
-    }, []);
-    return testing
-}
-
 
 
 
@@ -45,6 +26,7 @@ export default function Holdings() {
     const [currentStocks, setCurrentStocks] = useState({});
     const [currentUser, setCurrentUser] = useState({});
     const { isAuthenticated, user } = useSelector((state) => state.auth); 
+    const [stockArray, setStockArray] = useState([]);
     
     //Finding user (for sell page)
     var userURL = "http://localhost:3001/api/users/find/";
@@ -81,13 +63,58 @@ export default function Holdings() {
   }, []);
 
   
-  var currentStocksArray = [];
 
-  for (let i = 0; i < currentStocks.length; i++) {
-    currentStocksArray.push(currentStocks[i]);
+
+ 
+
+  console.log(tickerStrings);
+
+  //Getting the price
+
+var currentStocksArray = [];
+
+for (let i = 0; i < currentStocks.length; i++) {
+  currentStocksArray.push(currentStocks[i].ticker);
+}
+
+console.log("currentStocksArray", currentStocksArray);
+
+//Ticker Strings
+var tickerStrings = "";
+
+for (let i = 0; i < currentStocksArray.length; i++) {
+  if (currentStocksArray[i] !== undefined) {
+    if (i !== currentStocksArray.length - 1) {
+    tickerStrings = tickerStrings + currentStocksArray[i] + ",";
+    } else {
+    tickerStrings = tickerStrings + currentStocksArray[i];
+    }
+}
+}
+ //Getting price 
+       useEffect(() => {
+        const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
+        var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${tickerStrings}&token=${apiKey}`      
+     axios
+      .get(url)
+      .then((response) => setStockArray(response.data))
+      .catch((error) => console.log(error));
+    }, []);
+
+
+
+console.log("stockArray",stockArray)
+
+for (let i = 0; i < currentStocksArray.length; i++) {
+  if (currentStocksArray[i] !== undefined) {
+    currentStocks[i]["latestPrice"] = stockArray[currentStocksArray[i]].quote.latestPrice;
   }
+}
 
-  console.log(currentStocksArray);
+
+
+
+console.log("currentStocks", currentStocks);
 
   //Row making function
   function createData(
@@ -122,11 +149,9 @@ export default function Holdings() {
   
 
     
-  console.log(Testing("AAPL"))
 
   return (
     <React.Fragment>
-   
       <Title>Stocks in your Portfolio</Title>
       <Table size="small">
         <TableHead>
@@ -142,7 +167,7 @@ export default function Holdings() {
           </TableRow>
         </TableHead>
         <TableBody>
-        {currentStocksArray.map((row) => {
+        {currentStocks.map((row) => {
           
             const purchaseTotal = row.price * row.quantity;
     
@@ -152,8 +177,8 @@ export default function Holdings() {
               <TableCell>{row.quantity}</TableCell>
               <TableCell>{`$${row.price}`}</TableCell>
               <TableCell>{`$${row.price * row.quantity}`}</TableCell>
-              <TableCell align="right">{`0`}</TableCell>
-              <TableCell align="right">{`$${row.priceTotal}`}</TableCell>
+              <TableCell align="right">{`$${row.latestPrice}`}</TableCell>
+              <TableCell align="right">{`$${row.latestPrice * row.quantity}`}</TableCell>
               <TableCell align="right">{row.difference}</TableCell>
               <TableCell align="right">
                 <Button 

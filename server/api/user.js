@@ -7,8 +7,8 @@ const bcrypt = require("bcrypt");
 const auth = require("../middlewares/auth");
 const asyncMiddleware = require("../middlewares/async");
 
-const User = require("../models/User");
-const { validateUser } = require("../models/User");
+const User = require("../models/user");
+const { validateUser } = require("../models/user");
 
 const Stock = require("../models/stock");
 const { validateStock } = require("../models/stock");

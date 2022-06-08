@@ -21,7 +21,7 @@ export default function StockInfo(props) {
     const [stockData, setStockData] = useState({});
     useEffect(() => {
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_a78db42ce2414fe5a55dce3a1891af53";
+        const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + props.stock + urlBack;
 		axios
