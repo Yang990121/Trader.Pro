@@ -14,9 +14,11 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld }) => {
     const [amount, setAmount] = useState(1);
     const [confirm, setConfirm] = useState(false);
 
-    const price = 100;
-    // const [price, setPrice] = useState();   
     
+    const [stockData, setStockData] = useState({});
+    const price = 100;
+
+    //Price not specific to the ticker, pass in would be a better idea
     // useEffect(() => {
     //     var urlFront = "https://cloud.iexapis.com/stable/stock/";
     //     const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
@@ -24,9 +26,13 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld }) => {
     //     var url = urlFront + stock + urlBack;
     //     Axios
     //         .get(url)
-    //         .then((response) => setPrice(response.data.latestPrice))
+    //         .then((response) => setStockData(response.data))
     //         .catch((error) => console.log(error));
     // }, []);
+    // console.log(stockData)
+    // console.log(stockData.latestPrice)
+    // const price = stockData.latestPrice
+    // console.log(price)
 
   const changeAmount = (event) => {
     setAmount(event.target.value);

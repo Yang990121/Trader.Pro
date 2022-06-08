@@ -15,10 +15,12 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import Button from '@mui/material/Button';
 import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
+import CreateRow from "./createRow";
+
 
 //Getting the price
 function Testing (ticker) {
-    const [testing, setTesting] = useState();
+    const [testing, setTesting] = useState(0);
        useEffect(() => {
            var urlFront = "https://cloud.iexapis.com/stable/stock/";
            const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
@@ -31,6 +33,8 @@ function Testing (ticker) {
     }, []);
     return testing
 }
+
+
 
 
 
@@ -122,6 +126,7 @@ export default function Holdings() {
 
   return (
     <React.Fragment>
+   
       <Title>Stocks in your Portfolio</Title>
       <Table size="small">
         <TableHead>

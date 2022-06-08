@@ -1,78 +1,46 @@
-import * as React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { useTheme } from "@mui/material/styles";
-import {
-	LineChart,
-	Line,
-	XAxis,
-	YAxis,
-	Label,
-	ResponsiveContainer,
-} from "recharts";
+import { styled } from "@mui/material/styles";
 import Title from "../Template/Title";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import Tabs from "./Charts/Tabs";
 
-// Generate Sales Data
-function createData(time, amount) {
-	return { time, amount };
-}
-
-const data = [
-	createData("00:00", 0),
-	createData("03:00", 0),
-	createData("06:00", 0),
-	createData("09:00", 0),
-	createData("12:00", 0),
-	createData("15:00", 0),
-	createData("18:00", 0),
-	createData("21:00", 0),
-	createData("24:00", undefined),
-];
+const Item = styled(Paper)(({ theme }) => ({
+	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+	...theme.typography.body2,
+	padding: theme.spacing(1),
+	textAlign: "center",
+	color: theme.palette.text.secondary,
+}));
 
 export default function Chart() {
-	const theme = useTheme();
+	const [stockData, setStockData] = useState({});
+	var urlFront = "https://cloud.iexapis.com/stable/stock/";
+	const apiKey = "pk_a78db42ce2414fe5a55dce3a1891af53";
+	var urlBack = `/quote?token=${apiKey}`;
+	var url = urlFront + "SPY" + urlBack;
+
+	axios
+		.get(url)
+		.then(function (response) {
+			//Success
+			setStockData(response.data);
+		})
+		.catch(function (error) {
+			//Error
+			console.log(error);
+		});
 
 	return (
 		<React.Fragment>
-			<Title>Portfolio Analysis</Title>
-			<ResponsiveContainer>
-				<LineChart
-					data={data}
-					margin={{
-						top: 16,
-						right: 16,
-						bottom: 0,
-						left: 24,
-					}}
-				>
-					<XAxis
-						dataKey="time"
-						stroke={theme.palette.text.secondary}
-						style={theme.typography.body2}
-					/>
-					<YAxis
-						stroke={theme.palette.text.secondary}
-						style={theme.typography.body2}
-					>
-						<Label
-							angle={270}
-							position="left"
-							style={{
-								textAnchor: "middle",
-								fill: theme.palette.text.primary,
-								...theme.typography.body1,
-							}}
-						>
-							testing123 ($)
-						</Label>
-					</YAxis>
-					<Line
-						isAnimationActive={false}
-						type="monotone"
-						dataKey="amount"
-						stroke={theme.palette.primary.main}
-						dot={false}
-					/>
-				</LineChart>
-			</ResponsiveContainer>
+			<Grid container spacing={2}>
+				<Grid item xs={12}>
+					<Tabs  />
+				</ Grid>
+			</Grid>
 		</React.Fragment>
 	);
 }

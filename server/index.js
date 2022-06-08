@@ -14,6 +14,9 @@ if (!isProduction) {
 // gzip compression of responses
 app.use(compression());
 
+app.get("/", (req, res) => {
+  res.send("Hello server API!")
+});
 
 /* Redirect http to https */
 app.get("*", function (req, res, next) {
