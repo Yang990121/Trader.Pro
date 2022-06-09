@@ -10,18 +10,18 @@ import ConfirmPage from "./ConfirmPage";
 
 
 
-const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld }) => {
+const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld, price }) => {
     const [amount, setAmount] = useState(1);
     const [confirm, setConfirm] = useState(false);
 
     
     const [stockData, setStockData] = useState({});
-    const price = 100;
+    
 
     //Price not specific to the ticker, pass in would be a better idea
     // useEffect(() => {
     //     var urlFront = "https://cloud.iexapis.com/stable/stock/";
-    //     const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
+    //     const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
     //     var urlBack = `/quote?token=${apiKey}`;
     //     var url = urlFront + stock + urlBack;
     //     Axios
@@ -38,7 +38,7 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld }) => {
     setAmount(event.target.value);
   };
 
-  console.log(stocksHeld)
+  console.log("StocksHeld on sellPage", stocksHeld)
   //Connecting to the backend
   let amountHeld;
   let currentStockID;
@@ -154,7 +154,7 @@ const handleClick = () => {
           </div>
         </div>
       </div>
-      <ConfirmPage open={confirm} onClose={() => setConfirm(false)} stock={stock} quantity ={quantity} user = {user} stocksHeld = {stocksHeld} amount = {amount} />
+      <ConfirmPage open={confirm} onClose={() => setConfirm(false)} stock={stock} quantity ={quantity} user = {user} stocksHeld = {stocksHeld} amount = {amount} price={price}/>
     </div>
   );
 };

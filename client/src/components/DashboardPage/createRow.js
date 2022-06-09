@@ -12,7 +12,7 @@ function CreateRow(oneStock) {
      //Price not specific to the ticker, pass in would be a better idea
     useEffect(() => {
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
+        const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + oneStock.ticker + urlBack;
         Axios

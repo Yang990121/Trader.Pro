@@ -11,12 +11,12 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 
 
-const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount}) => {
+const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount, price}) => {
 
     
     const [confirm, setConfirm] = useState(false);
 
-    const price = 100;
+    
 
 
 

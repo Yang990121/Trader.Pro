@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import { useState } from "react";
 import Link from "@mui/material/Link";
@@ -12,147 +11,159 @@ import Typography from "@mui/material/Typography";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import axios from "axios";
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import Button from '@mui/material/Button';
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import Button from "@mui/material/Button";
 import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
 import CreateRow from "./createRow";
-
-
-
+import styles from "./Holdings.css";
 
 export default function Holdings() {
-    const [openSell, setSell] = useState(false);
-    const [sellStock, setSellStock] = useState("");
-    const [sellQuantity, setQuantity] = useState(0);
-    const [currentStocks, setCurrentStocks] = useState({});
-    const [currentUser, setCurrentUser] = useState({});
-    const { isAuthenticated, user } = useSelector((state) => state.auth); 
-    const [stockArray, setStockArray] = useState([]);
-    
-    //Finding user (for sell page)
-    var userURL = "http://localhost:3001/api/users/find/";
-    var userId = user.id;
-    var finalURL = userURL + String(userId)
+  const [openSell, setSell] = useState(false);
+  const [sellStock, setSellStock] = useState("");
+  const [sellQuantity, setQuantity] = useState(0);
+  const [HeldStocks, setHeldStocks] = useState({});
+  const [currentUser, setCurrentUser] = useState({});
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
+  const [stockArray, setStockArray] = useState([]);
+  const [tickerStrings, setTickerStrings] = useState("");
 
-    useEffect(() => {
-        axios.get(finalURL).then((response) => {
-            setCurrentUser(response.data)
-        });
-    }, []);
+  //Finding user (for sell page)
+  var userURL = "http://localhost:3001/api/users/find/";
+  var userId = user.id;
+  var finalURL = userURL + String(userId);
 
-    // function handleSell() {
-    //     setSell(true);
-    //     // setSellStock(stock);
-    // }
-
-    const handleSell = (stock, quantity) => {
-        setSell(true);
-        setSellStock(stock);
-        setQuantity(quantity);
-
-    }
-
-    //Getting the list of stocks the user owns
+  //Finding Stocks Held
   var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
   var userId = user.id;
   var StocksHeldURL = stockOwnURL + String(userId);
 
   useEffect(() => {
-    axios.get(StocksHeldURL).then((response) => {
-      setCurrentStocks(response.data);
+    axios.get(finalURL).then((response) => {
+      setCurrentUser(response.data);
+      console.log(currentUser, "CurrentUser")
+    });
+      axios.get(StocksHeldURL).then((response) => {
+        setHeldStocks(response.data);
+        console.log(HeldStocks, "HeldStocks")
+
     });
   }, []);
 
-  
-  var currentStocksArray = [];
 
-  for (let i = 0; i < currentStocks.length; i++) {
-    currentStocksArray.push(currentStocks[i]);
+
+  useEffect(() => {
+    setTickerStrings(gettingTickerString());
+    console.log("Ticker Strings: ", tickerStrings);
+  }, [HeldStocks]);
+
+
+  // function handleSell() {
+  //     setSell(true);
+  //     // setSellStock(stock);
+  // }
+
+  const handleSell = (stock, quantity) => {
+    setSell(true);
+    setSellStock(stock);
+    setQuantity(quantity);
+  };
+
+  //Getting the list of stocks the user owns
+
+  console.log("Held Stocks", HeldStocks);
+
+  const gettingTickerString = () => {
+
+  var HeldStocksArray = [];
+
+  for (let i = 0; i < HeldStocks.length; i++) {
+    HeldStocksArray.push(HeldStocks[i]);
   }
 
-  console.log(currentStocksArray);
+ 
 
+  //Ticker Strings
+  var temp = "";
 
-//Ticker Strings
-var tickerStrings = "";
-
-for (let i = 0; i < currentStocksArray.length; i++) {
-  if (currentStocksArray[i] !== undefined) {
-    if (i !== currentStocksArray.length - 1) {
-    tickerStrings = tickerStrings + currentStocksArray[i].ticker + ",";
-    } else {
-    tickerStrings = tickerStrings + currentStocksArray[i].ticker;
+  for (let i = 0; i < HeldStocksArray.length; i++) {
+    if (HeldStocksArray[i] !== undefined) {
+      if (i !== HeldStocksArray.length - 1) {
+        temp = temp + HeldStocksArray[i].ticker + ",";
+      } else {
+        temp = temp + HeldStocksArray[i].ticker;
+      }
     }
-}
-}
+  }
 
-console.log(tickerStrings);
-
-
- //Getting price 
-       useEffect(() => {
-        const apiKey = "pk_d22d5d82426140a09dd84403c55267f6";
-        var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${tickerStrings}&token=${apiKey}`      
-     axios
+  console.log("temp", temp);
+  
+  const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
+    var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
+    axios
       .get(url)
       .then((response) => setStockArray(response.data))
       .catch((error) => console.log(error));
-    }, []);
 
-console.log(stockArray)
-
-const latestPriceDict = {}
-
-for (const [key, value] of Object.entries(stockArray)) {
-  latestPriceDict[key] = value.quote.latestPrice;
+    console.log(stockArray, "stockArray")
+  
+  
+  return temp
 }
 
-// for (const [key,value] i < stockArray.length; i++) {
-//   if (stockArray[i] !== undefined) {
-//     latestPriceDict[stockArray[i].quote.symbol] = stockArray[i].quote.latestPrice;
-//   }
-// }
-console.log(latestPriceDict)
+//Just her so the bottom will not give an error
+var HeldStocksArray = [];
 
+  for (let i = 0; i < HeldStocks.length; i++) {
+    HeldStocksArray.push(HeldStocks[i]);
+  }
+  //Getting price
+  useEffect(() => {
+    
+  }, []);
 
+  const latestPriceDict = {};
 
-  //Row making function
-  function createData(
-    id,
-    ticker,
-    name,
-    quantity,
-    pricePurchase,
-    totalPurchase,
-    priceCurrent,
-    priceTotal,
-    difference
-  ) {
-    return {
-      id,
-      ticker,
-      name,
-      quantity,
-      pricePurchase,
-      totalPurchase,
-      priceCurrent,
-      priceTotal,
-      difference,
-    };
+  for (const [key, value] of Object.entries(stockArray)) {
+    latestPriceDict[key] = value.quote.latestPrice;
   }
 
+  console.log(latestPriceDict, "latestPriceDict");
+  // for (const [key,value] i < stockArray.length; i++) {
+  //   if (stockArray[i] !== undefined) {
+  //     latestPriceDict[stockArray[i].quote.symbol] = stockArray[i].quote.latestPrice;
+  //   }
+  // }
+
+  //Row making function
+  // function createData(
+  //   id,
+  //   ticker,
+  //   name,
+  //   quantity,
+  //   pricePurchase,
+  //   totalPurchase,
+  //   priceCurrent,
+  //   priceTotal,
+  //   difference
+  // ) {
+  //   return {
+  //     id,
+  //     ticker,
+  //     name,
+  //     quantity,
+  //     pricePurchase,
+  //     totalPurchase,
+  //     priceCurrent,
+  //     priceTotal,
+  //     difference,
+  //   };
+  // }
+
   //Final row to be mapped
-  
 
-
-    
-
-
- 
-return (
+  return (
     <React.Fragment>
-   
       <Title>Stocks in your Portfolio</Title>
       <Table size="small">
         <TableHead>
@@ -168,40 +179,49 @@ return (
           </TableRow>
         </TableHead>
         <TableBody>
-        {currentStocksArray.map((row) => {
-
+          {HeldStocksArray.map((row) => {
             const currentPrice = latestPriceDict[row.ticker];
-  
+
             const difference =
-                (currentPrice - row.price) / currentPrice;
-              const purchaseTotal =
-                Number(row.quantity) * Number(row.price);
-              const currentTotal =
-                Number(row.quantity) * Number(currentPrice);
-    
+              (((currentPrice - row.price) / currentPrice) * 100).toFixed(1) +
+              "%";
+            const purchaseTotal = Number(row.quantity) * Number(row.price);
+            const currentTotal = Number(row.quantity) * Number(currentPrice);
+
             return (
-                <TableRow key={row.id}>
-              <TableCell>{row.ticker}</TableCell>
-              <TableCell>{row.quantity}</TableCell>
-              <TableCell>{`$${row.price}`}</TableCell>
-              <TableCell>{`$${row.price * row.quantity}`}</TableCell>
-              <TableCell align="right">{`$${currentPrice}`}</TableCell>
-              <TableCell align="right">{`$${row.priceTotal}`}</TableCell>
-              <TableCell align="right">{row.difference}</TableCell>
-              <TableCell align="right">
-                <Button 
-                    variant="outlined" 
-                    startIcon={<AttachMoneyIcon />} 
-                    onClick={() => handleSell(row.ticker, row.quantity)} >
-                        Sell
-                    </Button>
-                   
-                    
-              </TableCell>
-              <SellPage open={openSell} onClose={() => setSell(false)} stock={sellStock} quantity={sellQuantity} user={currentUser[0]} stocksHeld={currentStocks}/>
-            </TableRow>
-            )
-            
+              <TableRow key={row.id}>
+                <TableCell>{row.ticker}</TableCell>
+                <TableCell>{row.quantity}</TableCell>
+                <TableCell>{`$${row.price}`}</TableCell>
+                <TableCell>{`$${purchaseTotal}`}</TableCell>
+                <TableCell align="right">{`$${currentPrice}`}</TableCell>
+                <TableCell align="right">{`$${currentTotal}`}</TableCell>
+                <TableCell
+                  align="right"
+                  className={difference > 0 ? styles.positive : styles.negative}
+                >
+                  {difference}
+                </TableCell>
+                <TableCell align="right">
+                  <Button
+                    variant="outlined"
+                    startIcon={<AttachMoneyIcon />}
+                    onClick={() => handleSell(row.ticker, row.quantity)}
+                  >
+                    Sell
+                  </Button>
+                </TableCell>
+                <SellPage
+                  open={openSell}
+                  onClose={() => setSell(false)}
+                  stock={sellStock}
+                  quantity={sellQuantity}
+                  user={currentUser[0]}
+                  stocksHeld={HeldStocks}
+                  price={currentPrice}
+                />
+              </TableRow>
+            );
           })}
         </TableBody>
       </Table>
@@ -209,7 +229,6 @@ return (
       <Typography color="textSecondary" align="center">
         {new Date().toDateString()}
       </Typography>
-      
     </React.Fragment>
   );
 }
