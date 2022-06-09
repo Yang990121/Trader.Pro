@@ -109,7 +109,7 @@ function Search() {
     function searchForStock(event) {
         // Setting up the correct API call
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
+        const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + stockSearch + urlBack;
 
@@ -206,14 +206,18 @@ function Search() {
                         <Item>
                         <div>
                             <h1><strong>Ticker: </strong>{stockData.symbol}</h1>
-                            <h3 className='Description'><strong>Latest Price: </strong>${stockData.latestPrice}<br/></h3>
-                            <h3 className='Description'><strong>Previous CLose: </strong>${stockData.previousClose}<br/></h3>
-                            <h3 className='Description'><strong>Percent Change: </strong>{stockData.changePercent}%<br/></h3>
-                            <h3 className='Description'><strong>Market Cap: </strong>${stockData.marketCap}<br/></h3>
-                            <h3 className='Description'><strong>YTD Change: </strong>{stockData.ytdChange}%<br/></h3>
-                            <h3 className='Description'><strong>Price to Equity Rtio: </strong>{stockData.peRatio}%<br/></h3>
-                            <h3 className='Description'><strong>52 week high: </strong>{stockData.week52High}<br/></h3>
-                            <h3 className='Description'><strong>52 week low: </strong>{stockData.week52Low}<br/> </h3>
+                            <h3 className='Description'><strong>Latest Price: </strong>${stockData.latestPrice.toFixed(2)}<br/></h3>
+                            <h3 className='Description'><strong>Previous Close: </strong>${stockData.previousClose.toFixed(2)}<br/></h3>
+                            <h3 className='Description'><strong>Percent Change: </strong>{stockData.changePercent.toFixed(2)}%<br/></h3>
+                            <h3 className='Description'><strong>Market Cap: </strong>$
+
+                            {(stockData.marketCap / 1000000000).toFixed(2) + " Billion"}
+
+                            <br/></h3>
+                            <h3 className='Description'><strong>YTD Change: </strong>{stockData.ytdChange.toFixed(2)}%<br/></h3>
+                            <h3 className='Description'><strong>Price to Equity Rtio: </strong>{stockData.peRatio.toFixed(2)}%<br/></h3>
+                            <h3 className='Description'><strong>52 week high: </strong>{stockData.week52High.toFixed(2)}<br/></h3>
+                            <h3 className='Description'><strong>52 week low: </strong>{stockData.week52Low.toFixed(2)}<br/> </h3>
                         </div>
                         </Item>: null}
                     
@@ -226,9 +230,8 @@ function Search() {
                                 <br />
                                 <br />
                                 <h2>Your Cash Balance</h2>
-                                <h3>$100,000</h3>
-                                <h3>can or cannot buy</h3>
-                                <h3>if can, can buy how many, if cannot, need how much cash to buy</h3>
+                                <h2>$100,000</h2>
+                                
                                 <br />
                                 
                                 <Button 

@@ -41,22 +41,17 @@ export default function Holdings() {
   useEffect(() => {
     axios.get(finalURL).then((response) => {
       setCurrentUser(response.data);
-      console.log(currentUser, "CurrentUser")
+      console.log(currentUser, "CurrentUser");
     });
-      axios.get(StocksHeldURL).then((response) => {
-        setHeldStocks(response.data);
-        console.log(HeldStocks, "HeldStocks")
-
+    axios.get(StocksHeldURL).then((response) => {
+      setHeldStocks(response.data);
+      console.log(HeldStocks, "HeldStocks");
     });
   }, []);
 
-
-
   useEffect(() => {
-    setTickerStrings(gettingTickerString());
-    console.log("Ticker Strings: ", tickerStrings);
+    gettingStockData();
   }, [HeldStocks]);
-
 
   // function handleSell() {
   //     setSell(true);
@@ -73,67 +68,51 @@ export default function Holdings() {
 
   console.log("Held Stocks", HeldStocks);
 
-  const gettingTickerString = () => {
+  const gettingStockData = () => {
+    var HeldStocksArray = [];
 
-  var HeldStocksArray = [];
+    for (let i = 0; i < HeldStocks.length; i++) {
+      HeldStocksArray.push(HeldStocks[i]);
+    }
 
-  for (let i = 0; i < HeldStocks.length; i++) {
-    HeldStocksArray.push(HeldStocks[i]);
-  }
+    //Ticker Strings
+    var temp = "";
 
- 
-
-  //Ticker Strings
-  var temp = "";
-
-  for (let i = 0; i < HeldStocksArray.length; i++) {
-    if (HeldStocksArray[i] !== undefined) {
-      if (i !== HeldStocksArray.length - 1) {
-        temp = temp + HeldStocksArray[i].ticker + ",";
-      } else {
-        temp = temp + HeldStocksArray[i].ticker;
+    for (let i = 0; i < HeldStocksArray.length; i++) {
+      if (HeldStocksArray[i] !== undefined) {
+        if (i !== HeldStocksArray.length - 1) {
+          temp = temp + HeldStocksArray[i].ticker + ",";
+        } else {
+          temp = temp + HeldStocksArray[i].ticker;
+        }
       }
     }
-  }
 
-  console.log("temp", temp);
-  
-  const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
+    console.log("temp", temp);
+
+    //Getting the stock data
+    const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
     var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
     axios
       .get(url)
       .then((response) => setStockArray(response.data))
       .catch((error) => console.log(error));
 
-    console.log(stockArray, "stockArray")
-  
-  
-  return temp
-}
+    console.log(stockArray, "stockArray");
+  };
 
-//Just her so the bottom will not give an error
-var HeldStocksArray = [];
+  //Just her so the bottom will not give an error
+  var HeldStocksArray = [];
 
   for (let i = 0; i < HeldStocks.length; i++) {
     HeldStocksArray.push(HeldStocks[i]);
   }
-  //Getting price
-  useEffect(() => {
-    
-  }, []);
 
   const latestPriceDict = {};
 
   for (const [key, value] of Object.entries(stockArray)) {
     latestPriceDict[key] = value.quote.latestPrice;
   }
-
-  console.log(latestPriceDict, "latestPriceDict");
-  // for (const [key,value] i < stockArray.length; i++) {
-  //   if (stockArray[i] !== undefined) {
-  //     latestPriceDict[stockArray[i].quote.symbol] = stockArray[i].quote.latestPrice;
-  //   }
-  // }
 
   //Row making function
   // function createData(
@@ -182,9 +161,10 @@ var HeldStocksArray = [];
           {HeldStocksArray.map((row) => {
             const currentPrice = latestPriceDict[row.ticker];
 
-            const difference =
-              (((currentPrice - row.price) / currentPrice) * 100).toFixed(1) +
-              "%";
+            const difference = (
+              ((currentPrice - row.price) / currentPrice) *
+              100
+            ).toFixed(1);
             const purchaseTotal = Number(row.quantity) * Number(row.price);
             const currentTotal = Number(row.quantity) * Number(currentPrice);
 
@@ -192,15 +172,21 @@ var HeldStocksArray = [];
               <TableRow key={row.id}>
                 <TableCell>{row.ticker}</TableCell>
                 <TableCell>{row.quantity}</TableCell>
-                <TableCell>{`$${row.price}`}</TableCell>
+                <TableCell>{`$${row.price.toFixed(2)}`}</TableCell>
                 <TableCell>{`$${purchaseTotal}`}</TableCell>
-                <TableCell align="right">{`$${currentPrice}`}</TableCell>
-                <TableCell align="right">{`$${currentTotal}`}</TableCell>
                 <TableCell
                   align="right"
-                  className={difference > 0 ? styles.positive : styles.negative}
+                  style={{ color: difference > 0 ? "green" : "red" }}
+                >{`$${currentPrice.toFixed(2)}`}</TableCell>
+                <TableCell
+                  align="right"
+                  style={{ color: difference > 0 ? "green" : "red" }}
+                >{`$${currentTotal.toFixed(2)}`}</TableCell>
+                <TableCell
+                  align="right"
+                  style={{ color: difference > 0 ? "green" : "red" }}
                 >
-                  {difference}
+                 {difference + "%"}
                 </TableCell>
                 <TableCell align="right">
                   <Button
@@ -210,16 +196,17 @@ var HeldStocksArray = [];
                   >
                     Sell
                   </Button>
-                </TableCell>
-                <SellPage
+                  <SellPage
                   open={openSell}
                   onClose={() => setSell(false)}
                   stock={sellStock}
                   quantity={sellQuantity}
                   user={currentUser[0]}
                   stocksHeld={HeldStocks}
-                  price={currentPrice}
+                  price={latestPriceDict[row.ticker]}
                 />
+                </TableCell>
+                
               </TableRow>
             );
           })}

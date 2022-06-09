@@ -123,7 +123,7 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
               disabled
               id="outlined-disabled"
               label="Stock Price"
-              defaultValue={stock.latestPrice}
+              defaultValue={stock.latestPrice.toFixed(2)}
             />{" "}
             <br />
             <TextField
@@ -132,12 +132,12 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
               label="Quantity"
               onChange={changeAmount}
             />{" "}
-            <p> Total = {amount * stock.latestPrice} </p>{" "}
+            <p> Total = {(amount * stock.latestPrice).toFixed(2)} </p>{" "}
             <p>
               {" "}
               {user.cashBalance - amount * stock.latestPrice >= 0
                 ? "Cash Balance after purchase: $" +
-                  String(user.cashBalance - amount * stock.latestPrice)
+                  String((user.cashBalance - amount * stock.latestPrice).toFixed(2))
                 : "Insufficient Funds"}{" "}
             </p>{" "}
             <Button

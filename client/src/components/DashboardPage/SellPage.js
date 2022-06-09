@@ -99,6 +99,7 @@ const handleClick = () => {
     }
 }
 
+console.log("Price on sell page", price)
   
   if (!open) return null;
   return (
