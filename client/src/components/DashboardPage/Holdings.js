@@ -163,7 +163,7 @@ export default function Holdings() {
             <TableCell align="right">Current Price</TableCell>
             <TableCell align="right">Current Total</TableCell>
             <TableCell align="right">Difference</TableCell>
-            <TableCell align="right">Sell</TableCell>
+            <TableCell align ="center">Sell</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -175,15 +175,15 @@ export default function Holdings() {
               ((currentPrice - row.price) / currentPrice) *
               100
             ).toFixed(2);
-            const purchaseTotal = Number(row.quantity) * Number(row.price);
-            const currentTotal = (Number(row.quantity) * Number(currentPrice))
+            const purchaseTotal = (Number(row.quantity) * Number(row.price)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            const currentTotal = (Number(row.quantity) * Number(currentPrice)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
             return (
               <TableRow key={row.id}>
                 <TableCell>{row.ticker}</TableCell>
                 <TableCell>{row.quantity}</TableCell>
                 <TableCell>{`$${row.price.toFixed(2)}`}</TableCell>
-                <TableCell>{`$${purchaseTotal.toFixed(2)}`}</TableCell>
+                <TableCell>{`$${purchaseTotal}`}</TableCell>
                 <TableCell
                   align="right"
                   style={{ color: difference > 0 ? "green" : "red" }}
@@ -191,11 +191,11 @@ export default function Holdings() {
                 <TableCell
                   align="right"
                   style={{ color: difference > 0 ? "green" : "red" }}
-                >{`$${currentTotal.toFixed(2)}`}</TableCell>
+                >{`$${currentTotal}`}</TableCell>
                 <TableCell
                   align="right"
                   style={{ color: difference > 0 ? "green" : "red" }}
-                >
+                >{difference >= 0 ? "▲" : "▼"}{" "}
                  {difference + "%"}
                 </TableCell>
                 <TableCell align="right">
