@@ -51,18 +51,7 @@ export const mainListItems = (
         </Link>
       </nav>
     </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <BarChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Portfolio Performane" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="work in progress" />
-    </ListItemButton>
+   
   </React.Fragment>
 );
 
@@ -80,14 +69,8 @@ export default function SecondaryListItems() {
   return (
     <React.Fragment>
       <ListSubheader component="div" inset>
-        work in progresss
       </ListSubheader>
-      <ListItemButton>
-        <ListItemIcon>
-          <SettingsIcon />
-        </ListItemIcon>
-        <ListItemText primary="Settings" />
-      </ListItemButton>
+      
       <ListItemButton>
         <ListItemIcon>
           <LogoutIcon />
@@ -111,12 +94,7 @@ export default function SecondaryListItems() {
       </>}
       handleClose={togglePopup}
     />}
-      <ListItemButton>
-        <ListItemIcon>
-          <AssignmentIcon />
-        </ListItemIcon>
-        <ListItemText primary="work in progress" />
-      </ListItemButton>
+      
       
     </React.Fragment>
   );

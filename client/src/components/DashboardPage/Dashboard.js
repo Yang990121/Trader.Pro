@@ -1,4 +1,7 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import axios from "axios";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiDrawer from "@mui/material/Drawer";
@@ -91,9 +94,25 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
 	const [open, setOpen] = React.useState(true);
+	const { isAuthenticated, user } = useSelector((state) => state.auth);
+	const [currentUser, setCurrentUser] = useState({});
 	const toggleDrawer = () => {
 		setOpen(!open);
 	};
+
+	//Finding username
+	var userURL = "http://localhost:3001/api/users/find/";
+	var userId = user.id;
+	var finalURL = userURL + String(userId);
+
+	useEffect(() => {
+		axios.get(finalURL).then((response) => {
+		  setCurrentUser(response.data);
+		  console.log(currentUser, "CurrentUser");
+		});
+  }, []);	
+
+  console.log(currentUser, "currentUser")
 
 	return (
 		<ThemeProvider theme={mdTheme}>
@@ -126,11 +145,9 @@ function DashboardContent() {
 						>
 							Stock DashBoard
 						</Typography>
-						<IconButton color="inherit">
-							<Badge badgeContent={0} color="secondary">
-								<NotificationsIcon />
-							</Badge>
-						</IconButton>
+						<Typography>
+							Hello, {currentUser[0].userName}
+						</Typography>
 					</Toolbar>
 				</AppBar>
 				<Drawer variant="permanent" open={open}>
