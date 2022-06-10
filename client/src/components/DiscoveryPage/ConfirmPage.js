@@ -29,6 +29,7 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
           ticker: stock.symbol,
           quantity: amount,
           price: stock.latestPrice,
+          latestPrice: stock.latestPrice
         })
 
           .then((res) => {

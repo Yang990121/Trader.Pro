@@ -23,6 +23,10 @@ const stockSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
+  latestPrice: {
+    type: Number,
+    required: true,
+  }
 });
 
 const validateStock = function (stock) {
@@ -31,6 +35,7 @@ const validateStock = function (stock) {
     ticker: Joi.string().required(),
     quantity: Joi.number().required(),
     price: Joi.number().required(),
+    latestPrice: Joi.number().required(),
   });
   return schema.validate(stock);
 }

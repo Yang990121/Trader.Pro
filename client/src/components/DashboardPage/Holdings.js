@@ -28,6 +28,8 @@ export default function Holdings() {
   const [stockArray, setStockArray] = useState([]);
   const [tickerStrings, setTickerStrings] = useState("");
 
+  
+
   //Finding user (for sell page)
   var userURL = "http://localhost:3001/api/users/find/";
   var userId = user.id;
@@ -64,7 +66,7 @@ export default function Holdings() {
     setQuantity(quantity);
   };
 
-  //Getting the list of stocks the user owns
+  //Getting the list of stocks the user owns (used in 2nd useEffect())
 
   console.log("Held Stocks", HeldStocks);
 
@@ -77,6 +79,8 @@ export default function Holdings() {
 
     //Ticker Strings
     var temp = "";
+
+    console.log("Held Stocks Array", HeldStocksArray);
 
     for (let i = 0; i < HeldStocksArray.length; i++) {
       if (HeldStocksArray[i] !== undefined) {
@@ -101,12 +105,17 @@ export default function Holdings() {
     console.log(stockArray, "stockArray");
   };
 
-  //Just her so the bottom will not give an error
+
+ 
+
+  //Moving stock data into HeldStocksArray
   var HeldStocksArray = [];
 
   for (let i = 0; i < HeldStocks.length; i++) {
+    if (HeldStocks[i].quantity > 0) {
     HeldStocksArray.push(HeldStocks[i]);
   }
+}
 
   const latestPriceDict = {};
 
@@ -160,24 +169,25 @@ export default function Holdings() {
         <TableBody>
           {HeldStocksArray.map((row) => {
             const currentPrice = latestPriceDict[row.ticker];
+            console.log(currentPrice, "currentPrice");
 
             const difference = (
               ((currentPrice - row.price) / currentPrice) *
               100
-            ).toFixed(1);
+            ).toFixed(2);
             const purchaseTotal = Number(row.quantity) * Number(row.price);
-            const currentTotal = Number(row.quantity) * Number(currentPrice);
+            const currentTotal = (Number(row.quantity) * Number(currentPrice))
 
             return (
               <TableRow key={row.id}>
                 <TableCell>{row.ticker}</TableCell>
                 <TableCell>{row.quantity}</TableCell>
                 <TableCell>{`$${row.price.toFixed(2)}`}</TableCell>
-                <TableCell>{`$${purchaseTotal}`}</TableCell>
+                <TableCell>{`$${purchaseTotal.toFixed(2)}`}</TableCell>
                 <TableCell
                   align="right"
                   style={{ color: difference > 0 ? "green" : "red" }}
-                >{`$${currentPrice.toFixed(2)}`}</TableCell>
+                >{`$${(currentPrice ?? 0 ).toFixed(2)}`}</TableCell>
                 <TableCell
                   align="right"
                   style={{ color: difference > 0 ? "green" : "red" }}
@@ -203,7 +213,7 @@ export default function Holdings() {
                   quantity={sellQuantity}
                   user={currentUser[0]}
                   stocksHeld={HeldStocks}
-                  price={latestPriceDict[row.ticker]}
+                  price={latestPriceDict[sellStock]}
                 />
                 </TableCell>
                 

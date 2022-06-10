@@ -17,6 +17,7 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld, price })
     
     const [stockData, setStockData] = useState({});
     
+    
 
     //Price not specific to the ticker, pass in would be a better idea
     // useEffect(() => {
@@ -73,7 +74,7 @@ const sellStock = () => {
     
     Axios.put("http://localhost:3001/api/users/changeStock", {
         userId: String(currentStockID), //stock's id
-        price: 50,
+        price: price,
         quantity: newQuantity,
         ticker: String(stock),
     })
@@ -90,8 +91,8 @@ const sellStock = () => {
 
 const handleClick = () => {
     if (amountHeld >= amount) {
-        updateBalance();
-         sellStock();
+        // updateBalance();
+        //  sellStock();
         //window.location.reload();
 
     } else {

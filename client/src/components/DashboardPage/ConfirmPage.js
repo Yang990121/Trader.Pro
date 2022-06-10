@@ -32,12 +32,15 @@ const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount
     }
 }
 
+  
 
+    console.log(user.cashBalance, "cashBalance")
+    console.log(amount, "amount")
+    console.log(price, "price")
+    
 
 const updateBalance = () => {
-    console.log(user)
-    console.log(user._id)
-    console.log(user.cashBalance)
+    
 
     Axios.put("http://localhost:3001/api/users/updateBalance", {
       userId: user._id,
@@ -54,11 +57,13 @@ const updateBalance = () => {
 const sellStock = () => {
     const newQuantity = parseInt(amountHeld) - parseInt(amount)
     
+    
     Axios.put("http://localhost:3001/api/users/changeStock", {
         userId: String(currentStockID), //stock's id
         price: price,
         quantity: newQuantity,
         ticker: String(stock),
+        latestPrice: price
     })
     .then((res) => {
         console.log(res);

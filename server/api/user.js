@@ -150,6 +150,7 @@ router.put(
     const newQuantity = req.body.quantity;
     const ticker = req.body.ticker
     const id = req.body.userId;
+    const latestPrice = req.body.latestPrice;
 
     try {
       console.log(req.body)
@@ -157,6 +158,7 @@ router.put(
         console.log("This is the stock that will be updated" + updatedStock)
         updatedStock.price = newPrice;
         updatedStock.quantity = newQuantity;
+        updatedStock.latestPrice = latestPrice
         updatedStock.save();
         
       });
