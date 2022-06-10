@@ -95,24 +95,14 @@ const mdTheme = createTheme();
 function DashboardContent() {
 	const [open, setOpen] = React.useState(true);
 	const { isAuthenticated, user } = useSelector((state) => state.auth);
-	const [currentUser, setCurrentUser] = useState({});
 	const toggleDrawer = () => {
 		setOpen(!open);
 	};
 
-	//Finding username
-	var userURL = "http://localhost:3001/api/users/find/";
-	var userId = user.id;
-	var finalURL = userURL + String(userId);
+	
 
-	useEffect(() => {
-		axios.get(finalURL).then((response) => {
-		  setCurrentUser(response.data);
-		  console.log(currentUser, "CurrentUser");
-		});
-  }, []);	
-
-  console.log(currentUser, "currentUser")
+ 
+  
 
 	return (
 		<ThemeProvider theme={mdTheme}>
@@ -146,7 +136,7 @@ function DashboardContent() {
 							Stock DashBoard
 						</Typography>
 						<Typography>
-							Hello, {currentUser[0].userName}
+							Hello, {user.name}
 						</Typography>
 					</Toolbar>
 				</AppBar>
