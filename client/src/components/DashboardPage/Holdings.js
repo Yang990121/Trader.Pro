@@ -43,11 +43,11 @@ export default function Holdings() {
   useEffect(() => {
     axios.get(finalURL).then((response) => {
       setCurrentUser(response.data);
-      console.log(currentUser, "CurrentUser");
+      // console.log(currentUser, "CurrentUser");
     });
     axios.get(StocksHeldURL).then((response) => {
       setHeldStocks(response.data);
-      console.log(HeldStocks, "HeldStocks");
+      // console.log(HeldStocks, "HeldStocks");
     });
   }, []);
 
@@ -68,7 +68,7 @@ export default function Holdings() {
 
   //Getting the list of stocks the user owns (used in 2nd useEffect())
 
-  console.log("Held Stocks", HeldStocks);
+  // console.log("Held Stocks", HeldStocks);
 
   const gettingStockData = () => {
     var HeldStocksArray = [];
@@ -80,7 +80,7 @@ export default function Holdings() {
     //Ticker Strings
     var temp = "";
 
-    console.log("Held Stocks Array", HeldStocksArray);
+    // console.log("Held Stocks Array", HeldStocksArray);
 
     for (let i = 0; i < HeldStocksArray.length; i++) {
       if (HeldStocksArray[i] !== undefined) {
@@ -92,7 +92,7 @@ export default function Holdings() {
       }
     }
 
-    console.log("temp", temp);
+    // console.log("temp", temp);
 
     //Getting the stock data
     const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
@@ -102,7 +102,7 @@ export default function Holdings() {
       .then((response) => setStockArray(response.data))
       .catch((error) => console.log(error));
 
-    console.log(stockArray, "stockArray");
+    // console.log(stockArray, "stockArray");
   };
 
 
@@ -169,7 +169,7 @@ export default function Holdings() {
         <TableBody>
           {HeldStocksArray.map((row) => {
             const currentPrice = latestPriceDict[row.ticker];
-            console.log(currentPrice, "currentPrice");
+            {/* console.log(currentPrice, "currentPrice"); */}
 
             const difference = (
               ((currentPrice - row.price) / currentPrice) *

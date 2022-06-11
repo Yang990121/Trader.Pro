@@ -68,6 +68,7 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
     Axios.put("http://localhost:3001/api/users/updateBalance", {
       userId: user._id,
       newCashBalance: user.cashBalance - stock.latestPrice * amount,
+      
     })
       .then((res) => {
         console.log(res);
@@ -83,8 +84,8 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
     addStock();
     updateBalance();
     console.log(stocksHeld);
-    console.log(stocksHeld[0].price);
-   window.location.reload();
+    // console.log(stocksHeld[0].price);
+    window.location.reload();
   } else {
     alert("You do not have enough money to buy this stock");
     }

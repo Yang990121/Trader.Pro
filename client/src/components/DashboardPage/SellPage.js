@@ -39,7 +39,7 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld, price })
     setAmount(event.target.value);
   };
 
-  console.log("StocksHeld on sellPage", stocksHeld)
+  // console.log("StocksHeld on sellPage", stocksHeld)
   //Connecting to the backend
   let amountHeld;
   let currentStockID;
@@ -53,9 +53,9 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld, price })
 
 
 const updateBalance = () => {
-    console.log(user)
-    console.log(user._id)
-    console.log(user.cashBalance)
+    // console.log(user)
+    // console.log(user._id)
+    // console.log(user.cashBalance)
 
     Axios.put("http://localhost:3001/api/users/updateBalance", {
       userId: user._id,
@@ -100,7 +100,7 @@ const handleClick = () => {
     }
 }
 
-console.log("Price on sell page", price)
+// console.log("Price on sell page", price)
   
   if (!open) return null;
   return (

@@ -68,6 +68,7 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
     Axios.put("http://localhost:3001/api/users/updateBalance", {
       userId: user._id,
       newCashBalance: user.cashBalance - stock.latestPrice * amount,
+      
     })
       .then((res) => {
         console.log(res);
@@ -109,8 +110,8 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
           <div className="content">
             <h2>
               {" "}
-              Purchase {stock.symbol}
-              Stock{" "}
+              Purchase {stock.symbol + " "}
+               Stock{" "}
             </h2>{" "}
             <TextField
               disabled

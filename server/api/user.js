@@ -122,12 +122,14 @@ router.put(
 
     const newCashBalance = req.body.newCashBalance;
     const id = req.body.userId;
+    
 
     try {
       console.log(req.body)
       await User.findById(id, (err, updatedBalance) => {
         console.log(updatedBalance)
         updatedBalance.cashBalance = newCashBalance
+        
         updatedBalance.save()
         
       });

@@ -53,3 +53,17 @@
   type: 'entity.parse.failed',
   level: 'info'
 }
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n' +
+    '    "userId": "62a3c911f92ffa9ec48838f1",\r\n' +
+    '        "price": 50,\r\n' +
+    '        "newCashBalance": 50000,\r\n' +
+    '        "newPortfolioBalance": 888,\r\n' +
+    '\r\n' +
+    '}',
+  type: 'entity.parse.failed',
+  level: 'info'
+}

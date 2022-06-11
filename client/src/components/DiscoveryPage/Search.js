@@ -215,7 +215,7 @@ function Search() {
 
                             <br/></h3>
                             <h3 className='Description'><strong>YTD Change: </strong>{stockData.ytdChange.toFixed(2)}%<br/></h3>
-                            <h3 className='Description'><strong>Price to Equity Rtio: </strong>{stockData.peRatio.toFixed(2)}%<br/></h3>
+                            <h3 className='Description'><strong>Price to Equity Rtio: </strong>{(stockData.peRatio?? 0).toFixed(2)}%<br/></h3>
                             <h3 className='Description'><strong>52 week high: </strong>{stockData.week52High.toFixed(2)}<br/></h3>
                             <h3 className='Description'><strong>52 week low: </strong>{stockData.week52Low.toFixed(2)}<br/> </h3>
                         </div>
