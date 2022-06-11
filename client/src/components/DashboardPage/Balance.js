@@ -42,8 +42,17 @@ export default function Balance() {
    
 	 useEffect(() => {
 	   gettingStockData();
-	   
-	 }, [HeldStocks]);
+	   gettingCashValue();
+	 }, [currentUser]);
+
+	 const gettingCashValue = () => {
+		for (const [key, value] of Object.entries(currentUser)) {
+			console.log(value.cashBalance, "value")
+			setCurrentCashBalance(value.cashBalance);
+		}
+	}
+		 
+
 
 	 const gettingStockData = () => {
 		var HeldStocksArray = [];
@@ -95,14 +104,6 @@ const gettingPortfolioValue = () => {
   }
 }
 
-for (const [key, value] of Object.entries(currentUser)) {
-	console.log(value.cashBalance, "value")
-	setCurrentCashBalance(value.cashBalance);
-}
-
-
-
-
 
 
 console.log(HeldStocksArray, "HeldStocksArray");
@@ -122,7 +123,7 @@ console.log(HeldStocksArray, "HeldStocksArray");
 	  console.log(currentPortfolioBalance, "currentPortfolioBalance");
 	  setPortfolioValue(currentPortfolioBalance);
 	
-	}
+}
 console.log("Current User", currentUser)
 
 	return (
