@@ -9,6 +9,34 @@ import Grid from "@mui/material/Grid";
 import Tabs from "./Tabs";
 import styles from "./StockInfo.css"
 
+function Testing (ticker) {
+	var price = 0
+        var urlFront = "https://cloud.iexapis.com/stable/stock/";
+        const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
+        var urlBack = `/quote?token=${apiKey}`;
+        var url = urlFront + ticker + urlBack;
+		axios
+			.get(url)
+			.then((response) => {price=response.data.latestPrice})
+			.catch((error) => console.log(error));
+	return price
+}
+// function Testing (ticker) {
+// 	const [testing, setTesting] = useState(0);
+//     useEffect(() => {
+//         var urlFront = "https://cloud.iexapis.com/stable/stock/";
+//         const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
+//         var urlBack = `/quote?token=${apiKey}`;
+//         var url = urlFront + ticker + urlBack;
+// 		axios
+// 			.get(url)
+// 			.then((response) => setTesting(response.data.latestPrice))
+// 			.catch((error) => console.log(error));
+// 	}, []);
+// 	return testing
+// }
+
+
 const Item = styled(Paper)(({ theme }) => ({
 	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 	...theme.typography.body2,
@@ -21,7 +49,7 @@ export default function StockInfo(props) {
     const [stockData, setStockData] = useState({});
     useEffect(() => {
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_a78db42ce2414fe5a55dce3a1891af53";
+        const apiKey = "pk_5f92cca7a5214c9d8bc554e9b1c04bdd";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + props.stock + urlBack;
 		axios
@@ -29,6 +57,8 @@ export default function StockInfo(props) {
 			.then((response) => setStockData(response.data))
 			.catch((error) => console.log(error));
 	}, []);
+
+
 
 	return (
 		<div>
@@ -42,7 +72,7 @@ export default function StockInfo(props) {
 			</h3>
 			<h3>
 				<strong>YTD Change: </strong>
-				<div style={{color: stockData.ytdChange > 0 ? "green" : "red"}}>
+				<div style={{color: stockData.ytdChange > 0 ? "#10ac84" : "#ff6b6b"}}>
 					{stockData.ytdChange >= 0 ? "▲" : "▼"}{" "}
 					{Math.round(stockData.ytdChange * 1000) / 1000}%
 				</div>

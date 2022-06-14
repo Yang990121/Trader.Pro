@@ -16,7 +16,7 @@ export default function Balance() {
 					Cash Balance:
 				</Typography>
 
-				<Typography component="p" variant="h4" align="center">
+				<Typography component="p" variant="h4"  align="center">
 					$100,000
 				</Typography>
 				<br />

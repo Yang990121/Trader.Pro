@@ -54,7 +54,7 @@ export default function BasicTabs() {
           <Tab label="Overall Market" {...a11yProps(0)} />
           <Tab label="S&P 500 index (SPY)" {...a11yProps(1)} />
           <Tab label="Nasdaq-100 Index (QQQ)" {...a11yProps(2)} />
-          <Tab label="Dow Jones (DIA)" {...a11yProps(3)} />
+          <Tab label="Dow Jones Average (DIA)" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
