@@ -22,6 +22,7 @@ import SecondaryListItems from '../Template/listItems';
 import { TextField } from '@mui/material';
 import DiscoverApp from './DiscoverApp';
 import Search from './Search'
+import { useSelector } from 'react-redux';
 
 function Copyright(props) {
   return (
@@ -86,6 +87,7 @@ const mdTheme = createTheme();
 
 function Discover() {
   const [open, setOpen] = React.useState(true);
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -122,9 +124,9 @@ function Discover() {
               Search
             </Typography>
             <IconButton color="inherit">
-              <Badge badgeContent={0} color="secondary">
-                <NotificationsIcon />
-              </Badge>
+            <Typography>
+							Hello, {user.name}
+						</Typography>
             </IconButton>
           </Toolbar>
         </AppBar>

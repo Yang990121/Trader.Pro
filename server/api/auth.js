@@ -36,6 +36,7 @@ router.get(
   "/sendConfirmationEmail",
   auth,
   asyncMiddleware(async (req, res) => {
+    console.log("Sending Confirmation Email")
     const user = await User.findById(req.user.id);
     await user.sendConfirmationEmail(req.hostname); // this is an instance method of user schema, refer to models/User module.
     res.send("Confirmation email has been sent to you.");

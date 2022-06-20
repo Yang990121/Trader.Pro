@@ -17,6 +17,7 @@ import BuyPage from './BuyPage';
 import { getUser } from "../services/userService"
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import config from "../config.json";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -74,13 +75,15 @@ function Search() {
 
     const [openBuy, setBuy] = useState(false);
 
-    var userURL = "http://localhost:3001/api/users/find/";
+    const frontURL = config.URL
+
+    var userURL = "/api/users/find/";
     var userId = user.id;
-    var finalURL = userURL + String(userId)
+    var finalURL = frontURL + userURL + String(userId)
 
     
-    var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
-    var StocksHeldURL = stockOwnURL + String(userId);
+    var stockOwnURL = "/api/users/stocksHeld/";
+    var StocksHeldURL = frontURL + stockOwnURL + String(userId);
     
 
     useEffect(() => {
@@ -109,7 +112,7 @@ function Search() {
     function searchForStock(event) {
         // Setting up the correct API call
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
+        const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + stockSearch + urlBack;
 

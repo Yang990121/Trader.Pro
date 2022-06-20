@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import config from "../config.json"
 
 //SELL CONFIRMATION PAGE
 
@@ -15,6 +16,8 @@ const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount
 
     
     const [confirm, setConfirm] = useState(false);
+
+    const frontURL = config.URL
 
     
 
@@ -41,8 +44,10 @@ const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount
 
 const updateBalance = () => {
     
+    const updateServerURL = frontURL + "/api/users/updateBalance/";
+    
 
-    Axios.put("http://localhost:3001/api/users/updateBalance", {
+    Axios.put(updateServerURL, {
       userId: user._id,
       newCashBalance: user.cashBalance + price * amount,
     })
@@ -56,9 +61,10 @@ const updateBalance = () => {
 
 const sellStock = () => {
     const newQuantity = parseInt(amountHeld) - parseInt(amount)
+    const sellStockURL = frontURL + "/api/users/changeStock/";
     
     
-    Axios.put("http://localhost:3001/api/users/changeStock", {
+    Axios.put(sellStockURL, {
         userId: String(currentStockID), //stock's id
         price: price,
         quantity: newQuantity,

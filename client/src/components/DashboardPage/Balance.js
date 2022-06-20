@@ -5,6 +5,10 @@ import Title from "../Template/Title";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import config from "../config";
+
+console.log(config, "config");
+console.log(config.URL, "config.base_url");
 
 function preventDefault(event) {
 	event.preventDefault();
@@ -18,16 +22,17 @@ export default function Balance() {
 	const [porfolioValue, setPortfolioValue] = useState(0);
 	const [currentCashBalance, setCurrentCashBalance] = useState(0);
 
+	const frontURL = config.URL
 
 	 //Finding user (for sell page)
-	 var userURL = "http://localhost:3001/api/users/find/";
+	 var userURL = "/api/users/find/";
 	 var userId = user.id;
-	 var finalURL = userURL + String(userId);
-   
+	 var finalURL = frontURL + userURL + String(userId);
+	 console.log(finalURL, "finalURL");
 	 //Finding Stocks Held
-	 var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
+	 var stockOwnURL = "/api/users/stocksHeld/";
 	 
-	 var StocksHeldURL = stockOwnURL + String(userId);
+	 var StocksHeldURL = frontURL + stockOwnURL + String(userId);
    
 	 useEffect(() => {
 	   axios.get(finalURL).then((response) => {
@@ -76,10 +81,11 @@ export default function Balance() {
 		  }
 		}
 	
+		
 		console.log("temp", temp);
 	
 		//Getting the stock data
-		const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
+		const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
 		var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
 		axios
 		  .get(url)
@@ -157,7 +163,7 @@ console.log("Current User", currentUser)
 					variant="h4"
 					align="center"
 				>
-					$100,000
+					${(currentCashBalance + porfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
 				</Typography>
 			</div>
 		</React.Fragment>

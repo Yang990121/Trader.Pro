@@ -18,6 +18,7 @@ import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
 import CreateRow from "./createRow";
 import styles from "./Holdings.css";
+import config from "../config";
 
 
 
@@ -32,10 +33,12 @@ export default function Holdings() {
     const [stockArray, setStockArray] = useState([]); //stockdata from api
     const [currentStocksArray, setCurrentStocksArray] = useState([]); //stocks the user owns in arrayform
     
+    const frontURL = config.URL
+
     //Finding user (for sell page)
-    var userURL = "http://localhost:3001/api/users/find/";
+    var userURL = "/api/users/find/";
     var userId = user.id;
-    var finalURL = userURL + String(userId)
+    var finalURL = frontURL + userURL + String(userId)
     const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
 
    
@@ -52,9 +55,9 @@ export default function Holdings() {
     }
 
     //Getting the list of stocks the user owns
-  var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
+  var stockOwnURL = "/api/users/stocksHeld/";
   var userId = user.id;
-  var StocksHeldURL = stockOwnURL + String(userId);
+  var StocksHeldURL = frontURL + stockOwnURL + String(userId);
 
   useEffect(() => {
     getStockheldData();

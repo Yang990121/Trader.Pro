@@ -23,6 +23,7 @@ import axios from "axios";
 import { NewsContextProvider } from "./NewsContext";
 import NewsContent from './NewsContent';
 import "./News.css";
+import { useSelector } from 'react-redux';
 
 
 function Copyright(props) {
@@ -88,6 +89,7 @@ const mdTheme = createTheme();
 
 function News() {
   const [open, setOpen] = React.useState(true);
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -124,9 +126,9 @@ function News() {
               Market News
             </Typography>
             <IconButton color="inherit">
-              <Badge badgeContent={0} color="secondary">
-                <NotificationsIcon />
-              </Badge>
+            <Typography>
+							Hello, {user.name}
+						</Typography>
             </IconButton>
           </Toolbar>
         </AppBar>

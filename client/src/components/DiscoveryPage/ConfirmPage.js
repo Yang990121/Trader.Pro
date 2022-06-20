@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import config from "../config";
 
 //BUY CONFIRMATION PAGE
 
@@ -14,17 +15,19 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
     const [confirm, setConfirm] = useState(false);
   
   const [balance, setBalance] = useState(0);
+  const frontURL = config.URL
 
   
 
   const addStock = () => {
+    const addStockURL = frontURL + "/api/users/updateStock/";
     console.log("This is the index" + index);
     if (user.cashBalance - stock.latestPrice * amount > 0) {
       if (index < 0) {
         console.log(user);
         console.log(user._id);
         console.log(user.cashBalance);
-        Axios.post("http://localhost:3001/api/users/updateStock", {
+        Axios.post(addStockURL, {
           userId: user._id,
           ticker: stock.symbol,
           quantity: amount,
@@ -39,6 +42,7 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
             console.log(err);
           });
       } else {
+        const changeStockURL = frontURL + "/api/users/changeStock/";
         const prevPrice = stocksHeld[index].price;
         const prevQuantity = stocksHeld[index].quantity;
         const newQuantity = parseInt(prevQuantity) + parseInt(amount);
@@ -48,7 +52,7 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
         console.log("Prev Quantity: " + prevQuantity);
         console.log("New Quantity: " + newQuantity);
         console.log("New Price: " + newPrice);
-        Axios.put("http://localhost:3001/api/users/changeStock", {
+        Axios.put(changeStockURL , {
           userId: String(stocksHeld[index]._id), //id given to the stock not userId
           price: newPrice,
           quantity: newQuantity,
@@ -65,7 +69,8 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
   };
 
   const updateBalance = () => {
-    Axios.put("http://localhost:3001/api/users/updateBalance", {
+    const updateBalanceURL = frontURL + "/api/users/updateBalance/";
+    Axios.put(updateBalanceURL, {
       userId: user._id,
       newCashBalance: user.cashBalance - stock.latestPrice * amount,
       

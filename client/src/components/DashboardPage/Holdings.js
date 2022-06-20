@@ -17,6 +17,7 @@ import SellPage from "./SellPage";
 import { requirePropFactory } from "@mui/material";
 import CreateRow from "./createRow";
 import styles from "./Holdings.css";
+import config from "../config";
 
 export default function Holdings() {
   const [openSell, setSell] = useState(false);
@@ -28,17 +29,17 @@ export default function Holdings() {
   const [stockArray, setStockArray] = useState([]);
   const [tickerStrings, setTickerStrings] = useState("");
 
-  
+  const frontURL = config.URL
 
   //Finding user (for sell page)
-  var userURL = "http://localhost:3001/api/users/find/";
+  var userURL = "/api/users/find/";
   var userId = user.id;
-  var finalURL = userURL + String(userId);
+  var finalURL = frontURL + userURL + String(userId);
 
   //Finding Stocks Held
-  var stockOwnURL = "http://localhost:3001/api/users/stocksHeld/";
+  var stockOwnURL = "/api/users/stocksHeld/";
   var userId = user.id;
-  var StocksHeldURL = stockOwnURL + String(userId);
+  var StocksHeldURL = frontURL + stockOwnURL + String(userId);
 
   useEffect(() => {
     axios.get(finalURL).then((response) => {
@@ -95,7 +96,7 @@ export default function Holdings() {
     // console.log("temp", temp);
 
     //Getting the stock data
-    const apiKey = "pk_9249432a0cdb4779a11da39eb35f224a";
+    const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
     var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
     axios
       .get(url)
