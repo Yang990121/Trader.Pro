@@ -19,6 +19,8 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
 
   
 
+  
+
   const addStock = () => {
     const addStockURL = frontURL + "/api/users/updateStock/";
     console.log("This is the index" + index);
@@ -52,11 +54,14 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
         console.log("Prev Quantity: " + prevQuantity);
         console.log("New Quantity: " + newQuantity);
         console.log("New Price: " + newPrice);
+        console.log("Stocks Held", stocksHeld)
+        
         Axios.put(changeStockURL , {
           userId: String(stocksHeld[index]._id), //id given to the stock not userId
           price: newPrice,
           quantity: newQuantity,
           ticker: String(stock.symbol),
+          latestPrice: stock.latestPrice,
         })
           .then((res) => {
             console.log(res);
@@ -90,7 +95,7 @@ const ConfirmPage = ({ open, onClose, stock, user, stocksHeld, index, amount}) =
     updateBalance();
     console.log(stocksHeld);
     // console.log(stocksHeld[0].price);
-    window.location.reload();
+    setTimeout(() => window.location.reload(), 500);
   } else {
     alert("You do not have enough money to buy this stock");
     }

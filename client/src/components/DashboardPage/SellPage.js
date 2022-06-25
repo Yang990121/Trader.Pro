@@ -21,6 +21,7 @@ const SellPage = ({ open, onClose, stock , quantity , user, stocksHeld, price })
     const frontURL = config.URL;
     
     
+    
 
     //Price not specific to the ticker, pass in would be a better idea
     // useEffect(() => {
@@ -151,8 +152,15 @@ const handleClick = () => {
               label="Quantity"
               onChange={changeAmount}
             />
-            <p>Total = {amount * price}</p>
-            <p>Cash Balance after purchase: </p>
+            <p>Total = {(amount * price).toFixed(2)}</p>
+            <p>
+            {" "}
+              {amountHeld - amount >= 0
+                ? "Cash Balance after purchase: $" +
+                  String(((user.cashBalance ?? 0) + amount * price).toFixed(2))
+                : "Insufficient Quantity"}{" "}
+            
+             </p>
             <Button variant="contained" startIcon={<AttachMoneyIcon />} onClick={()=> setConfirm(true)} >
               Sell Stock
             </Button>

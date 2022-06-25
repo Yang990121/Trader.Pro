@@ -86,7 +86,7 @@ const handleClick = () => {
     if (amountHeld >= amount) {
         updateBalance();
          sellStock();
-        window.location.reload();
+         setTimeout(() => window.location.reload(), 3000);
 
     } else {
         alert("You don't have enough stocks to sell");

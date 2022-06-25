@@ -27,7 +27,7 @@ function StockGraph(props) {
 	const [stockPrice, setStockPrice] = useState({});
 	useEffect(() => {
 		var urlFront = "https://cloud.iexapis.com/stable/stock/";
-		const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
+		const apiKey = "pk_58968f3da90f4c0baae1b949effbb845";
 		var urlBack = `/chart/?token=${apiKey}`;
 		var url = urlFront + props.stock + urlBack;
 		axios

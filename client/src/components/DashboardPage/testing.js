@@ -39,7 +39,7 @@ export default function Holdings() {
     var userURL = "/api/users/find/";
     var userId = user.id;
     var finalURL = frontURL + userURL + String(userId)
-    const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
+    const apiKey = "pk_a40fd9f154374e4986b4ef7e8b25ac96";
 
    
     // function handleSell() {

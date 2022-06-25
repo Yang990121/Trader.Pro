@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Chart() {
 	const [stockData, setStockData] = useState({});
 	var urlFront = "https://cloud.iexapis.com/stable/stock/";
-	const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
+	const apiKey = "pk_f3e09d5f26654953b80eb4315368a6ce";
 	var urlBack = `/quote?token=${apiKey}`;
 	var url = urlFront + "SPY" + urlBack;
 

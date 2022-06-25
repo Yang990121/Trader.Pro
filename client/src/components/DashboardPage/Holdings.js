@@ -96,7 +96,7 @@ export default function Holdings() {
     // console.log("temp", temp);
 
     //Getting the stock data
-    const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
+    const apiKey = "pk_90431397ea944ef195fc3cf88b95e362";
     var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
     axios
       .get(url)
@@ -177,7 +177,7 @@ export default function Holdings() {
               100
             ).toFixed(2);
             const purchaseTotal = (Number(row.quantity) * Number(row.price)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            const currentTotal = (Number(row.quantity) * Number(currentPrice)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            const currentTotal = (Number(row.quantity) * Number(currentPrice)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
             return (
               <TableRow key={row.id}>
@@ -195,8 +195,8 @@ export default function Holdings() {
                 >{`$${currentTotal}`}</TableCell>
                 <TableCell
                   align="right"
-                  style={{ color: difference > 0 ? "green" : "red" }}
-                >{difference >= 0 ? "▲" : "▼"}{" "}
+                  style={{ color: difference > 0 ? "green" : (difference < 0 ? "red" : "black") }}
+                >{difference > 0 ? "▲" : (difference < 0 ? "▼" : " ")}{" "}
                  {difference + "%"}
                 </TableCell>
                 <TableCell align="right">

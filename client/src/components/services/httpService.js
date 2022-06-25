@@ -15,7 +15,7 @@ Axios.interceptors.response.use(null, (error) => {
   return Promise.reject(error);
 });
 
-function setJwt(jwt) {
+function setJwt(jwt) { //maybe copy paste this code such that api calls can be made successfully.
   if (jwt) {
     Axios.defaults.headers.common["x-auth-token"] = jwt;
   } else {

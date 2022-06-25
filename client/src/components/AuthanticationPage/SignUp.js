@@ -43,7 +43,7 @@ export default function Register() {
   const isLoading = useSelector((state) => state.uiState.isLoading); //allows you to extract data from the redux store state
 
   const validationSchema = { //basically conditions that have to be met to pass the validation
-    userName: Joi.string().min(3).max(255).required().label("First Name"),
+    userName: Joi.string().min(3).max(255).required().label("User Name"),
     email: Joi.string().email({tlds : { allow : false}}).required().label("Email Address"),
     password: Joi.string().min(6).max(255).required().label("Password"),
     confirmPassword: Joi.any()

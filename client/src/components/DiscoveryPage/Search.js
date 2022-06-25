@@ -112,7 +112,7 @@ function Search() {
     function searchForStock(event) {
         // Setting up the correct API call
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
+        const apiKey = "pk_dc992759279b4d37a3b0433492a3ca21";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + stockSearch + urlBack;
 
@@ -233,7 +233,7 @@ function Search() {
                                 <br />
                                 <br />
                                 <h2>Your Cash Balance</h2>
-                                <h2>$100,000</h2>
+                                <h2>${(currentUser[0].cashBalance ?? 100000).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h2>
                                 
                                 <br />
                                 

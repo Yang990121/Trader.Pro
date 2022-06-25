@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Navigate, Outlet} from "react-router-dom";
 import { useSelector } from "react-redux";
 
-function ProtectedRoute({ component: Component, render, ...rest }) {
+function ProtectedRoute({ component: Component, render, ...rest }) { //USE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   return isAuthenticated ? (
     <Route

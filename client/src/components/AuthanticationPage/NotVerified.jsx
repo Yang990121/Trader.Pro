@@ -28,7 +28,9 @@ function NotVerified() {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
 
   const handleClick = () => {
-    sendConfirmationEmail().then((res) => toastify(res.data, "success"));
+    console.log("Handling click...")
+    sendConfirmationEmail().then((res) => toastify(res.data, "success"))
+      .catch((err) => toastify(err.response.data, "error"));
   };
 
   // if user is not authenticated then Navigate to login page

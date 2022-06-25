@@ -21,7 +21,7 @@ export default function StockInfo(props) {
     const [stockData, setStockData] = useState({});
     useEffect(() => {
         var urlFront = "https://cloud.iexapis.com/stable/stock/";
-        const apiKey = "pk_f5660ce6eae543f9a8a310836d368d8d";
+        const apiKey = "pk_bbe99a25ea9d4866a87dfc683118aba3";
         var urlBack = `/quote?token=${apiKey}`;
         var url = urlFront + props.stock + urlBack;
 		axios
@@ -38,7 +38,7 @@ export default function StockInfo(props) {
 		
 			</h3>
 			<h3>
-				<strong>Previous CLose: </strong>${stockData.previousClose}
+				<strong>Previous Close: </strong>${(stockData.previousClose ?? 0).toFixed(2)}
 			</h3>
 			<h3>
 				<strong>YTD Change: </strong>

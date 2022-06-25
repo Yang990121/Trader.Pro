@@ -19,7 +19,7 @@ export default function Balance() {
 	const [currentUser, setCurrentUser] = useState({});
 	const [HeldStocks, setHeldStocks] = useState({});
 	const [stockArray, setStockArray] = useState([]);
-	const [porfolioValue, setPortfolioValue] = useState(0);
+	const [portfolioValue, setPortfolioValue] = useState(0);
 	const [currentCashBalance, setCurrentCashBalance] = useState(0);
 
 	const frontURL = config.URL
@@ -85,7 +85,7 @@ export default function Balance() {
 		console.log("temp", temp);
 	
 		//Getting the stock data
-		const apiKey = "pk_f8539e97b6d244ec887bd39171f7ba89";
+		const apiKey = "pk_795ba2f0a021470285d1b51929de7097";
 		var url = `https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=${temp}&token=${apiKey}`;
 		axios
 		  .get(url)
@@ -113,6 +113,7 @@ const gettingPortfolioValue = () => {
 
 
 console.log(HeldStocksArray, "HeldStocksArray");
+console.log(stockArray, "stockArray");
 //StockArray (which contains latest data) is a dictionary
 
 
@@ -121,16 +122,19 @@ console.log(HeldStocksArray, "HeldStocksArray");
 	  for (const [key, value] of Object.entries(stockArray)) {
 		  for (let i = 0; i < HeldStocksArray.length; i++) {
 			if (HeldStocksArray[i].ticker === value.quote.symbol) {
-				currentPortfolioBalance += value.quote.latestPrice * HeldStocks[i].quantity;
+				
+				currentPortfolioBalance = currentPortfolioBalance + (value.quote.latestPrice * HeldStocksArray[i].quantity);
+				
 				break;
 		}
 	  }
 	}
-	  console.log(currentPortfolioBalance, "currentPortfolioBalance");
+	  
 	  setPortfolioValue(currentPortfolioBalance);
 	
 }
 console.log("Current User", currentUser)
+console.log("Portfolio Value", portfolioValue)
 
 	return (
 		<React.Fragment>
@@ -152,7 +156,7 @@ console.log("Current User", currentUser)
 					variant="h4"
 					align="center"
 				>
-					${(porfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+					${(portfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
 				</Typography>
 				<br />
 				<Typography variant="h5" color="textSecondary" align="center">
@@ -163,7 +167,7 @@ console.log("Current User", currentUser)
 					variant="h4"
 					align="center"
 				>
-					${(currentCashBalance + porfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+					${(currentCashBalance + portfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
 				</Typography>
 			</div>
 		</React.Fragment>

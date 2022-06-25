@@ -38,12 +38,14 @@ function ForgotPassword() {
 
   function doSubmit() {
     sendForgotPasswordEmail(values.email)
-      .then((res) => toastify(res.data, "success"))
+      .then((res) => {toastify(res.data, "success")
+      setTimeout(() => (window.location = "/login"), 3000)})
       .catch((err) => {
         if (err.response && err.response.status < 500)
           toastify(err.response.data, "error");
       });
   }
+  
   return (
     <div className={classes.root}>
       <h1>Send link for resetting password</h1>
