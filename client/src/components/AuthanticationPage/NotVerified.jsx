@@ -41,16 +41,17 @@ function NotVerified() {
 
   return (
     <div className={classes.root}>
-      <h1>Please verify your Email Address.</h1>
+      <h1>Please try logging in again after verifying your email address.</h1>
       <p className={classes.text}>Didn't get the email?</p>
-      <Button
+      {/* <Button
         variant="outlined"
         size="large"
         color="primary"
         onClick={handleClick}
       >
         Resend Confirmation Email
-      </Button>
+      </Button> */}
+      Check your junk folder
     </div>
   );
 }

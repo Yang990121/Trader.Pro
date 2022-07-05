@@ -27,8 +27,16 @@ const useAuth = () => {
 }
 
 const ProtectedRoutes = (props:any) => {
-  const auth = useAuth();
-  return auth ? <Outlet/> : <Navigate to="/login" />;
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
+  if (!isAuthenticated) {
+    return <Navigate to="/login" />;
+  }
+  if (isAuthenticated && !user.isVerified) {
+    return <Navigate to="/unverified-user" />;
+  }
+  return <Outlet />;
+
+  // return auth ? <Outlet/> : <Navigate to="/login" />;
 }
 
 
