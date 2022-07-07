@@ -43,7 +43,7 @@ function App() {
         {/* Public Routes */}
         
           
-          <Route path="register" element={<SignUp />}/>
+          <Route path="/register" element={<SignUp />}/>
           <Route path="/resetPassword/:token" element={<ResetPassword />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/unverified-user" element={<NotVerified />} />

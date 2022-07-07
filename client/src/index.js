@@ -16,7 +16,7 @@ import { setCurrentUser } from "./components/actions/authActions"
 // Check for Token
 if (getJwt()) {
   // Set auth token in http headers
-  // http.setJwt(getJwt());
+  //http.setJwt(getJwt());
   
   // Decode token and get user info and expression
   const decoded = getCurrentUser();

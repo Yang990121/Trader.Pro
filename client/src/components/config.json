@@ -1,4 +1,4 @@
 {
-  "URL": "http://localhost:3001",
-  "apiUrl": "http://localhost:3001"
+  "URL": "https://trader-pro-server.herokuapp.com",
+  "apiUrl": "https://trader-pro-server.herokuapp.com"
 }
