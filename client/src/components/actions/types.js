@@ -1,0 +1,8 @@
+export const GET_ERRORS = "GET_ERRORS";
+export const RESET_ERRORS = "RESET_ERRORS";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const SET_LOADING = "SET_LOADING";
+export const UNSET_LOADING = "UNSET_LOADING";
+export const TOGGLE_SIDEMENU = "TOGGLE_SIDEMENU";
+export const DISPLAY_TOAST = "DISPLAY_TOAST";
+export const HIDE_TOAST = "HIDE_TOAST";
