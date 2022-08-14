@@ -48,6 +48,7 @@ function App() {
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/unverified-user" element={<NotVerified />} />
           <Route path="/confirmEmail/:token" element={<ConfirmEmail />} />
+          <Route path ="/" element={<SignIn />} />
           <Route path="*" element={<SignIn />}/> 
           
         

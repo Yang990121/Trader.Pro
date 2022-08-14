@@ -135,6 +135,7 @@ console.log(stockArray, "stockArray");
 }
 console.log("Current User", currentUser)
 console.log("Portfolio Value", portfolioValue)
+const totalValue = currentCashBalance + portfolioValue
 
 	return (
 		<React.Fragment>
@@ -166,8 +167,9 @@ console.log("Portfolio Value", portfolioValue)
 					component="p"
 					variant="h4"
 					align="center"
+					style={{ color: totalValue > 100000 ? "green" : (totalValue < 100000 ? "red" : "black") }}
 				>
-					${(currentCashBalance + portfolioValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+					${(totalValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
 				</Typography>
 			</div>
 		</React.Fragment>

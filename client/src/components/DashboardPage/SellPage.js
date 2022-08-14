@@ -156,7 +156,7 @@ const handleClick = () => {
             <p>
             {" "}
               {amountHeld - amount >= 0
-                ? "Cash Balance after purchase: $" +
+                ? "Cash Balance after sale: $" +
                   String(((user.cashBalance ?? 0) + amount * price).toFixed(2))
                 : "Insufficient Quantity"}{" "}
             

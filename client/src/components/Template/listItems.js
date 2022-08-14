@@ -37,7 +37,7 @@ export const mainListItems = (
           <ListItemIcon>
             <SearchIcon />
           </ListItemIcon>
-          <ListItemText primary="Discover Stocks" />
+          <ListItemText primary="Discover & Buy Stocks" />
         </ListItemButton>
       </Link>
     </nav>

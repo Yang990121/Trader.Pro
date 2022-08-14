@@ -121,7 +121,7 @@ function Discover() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Search
+              Discover Stocks
             </Typography>
             <IconButton color="inherit">
             <Typography>
