@@ -168,7 +168,7 @@ function Search() {
     return (
         <div>
             <Grid container spacing={0}>
-                <TextField fullWidth label="Search for a Stock" id="Stock Search" 
+                <TextField fullWidth label="Search by Ticker name, e.g. SPY" id="Stock Search" 
                     onChange={event => setStockSearch(event.target.value)}/>
             </Grid>
             <br />

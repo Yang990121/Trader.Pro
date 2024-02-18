@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Joi from "@hapi/joi";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, Link } from "react-router-dom";
@@ -16,6 +16,9 @@ import Container from "@material-ui/core/Container";
 import PasswordField from "../common/PasswordField";
 import useForm from "../customHooks/useForm";
 import { loginUser } from "../actions/authActions";
+import config from "../config.json"
+import axios from "axios";
+import { useEffect } from "react";
 
 function Copyright() {
   return (
@@ -54,6 +57,9 @@ export default function Login() {
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.uiState.isLoading);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const [users, setUsers] = useState([]);
+  
+  
 
   // Schema for validating input fields
   const schema = {
@@ -71,9 +77,33 @@ export default function Login() {
     doSubmit, // passed reference of function, it will call in useForm hook
   });
 
+ 
+
   function doSubmit() {
     dispatch(loginUser(values));
   }
+
+  //Finding if user isVerified or not
+  const frontURL = config.URL
+  var finalURL = frontURL + "/api/users/find/"
+
+  useEffect(() => {
+    axios.get(finalURL).then((response) => {
+      setUsers(response.data);
+      
+    });
+  }, [values]);
+
+  function isVerified(email) {
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].email === email) {
+        
+        return users[i].isVerified;
+        
+      }
+    }
+  }
+  console.log(isVerified(values.email));
 
   // if user is authenticated then Navigate to user page
   if (isAuthenticated) return <Navigate to="/dashboard" />;

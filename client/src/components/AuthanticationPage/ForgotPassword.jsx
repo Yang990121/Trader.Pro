@@ -36,6 +36,7 @@ function ForgotPassword() {
     doSubmit, // passed reference of function, it will call in useForm hook
   });
 
+
   function doSubmit() {
     sendForgotPasswordEmail(values.email)
       .then((res) => {toastify(res.data, "success")
@@ -45,7 +46,6 @@ function ForgotPassword() {
           toastify(err.response.data, "error");
       });
   }
-  
   return (
     <div className={classes.root}>
       <h1>Send link for resetting password</h1>

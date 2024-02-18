@@ -16,6 +16,8 @@ const BuyPage = ({ open, onClose, stock, user, stocksHeld, index }) => {
   const [balance, setBalance] = useState(0);
 
   const frontURL = config.URL
+
+  console.log(index, "index")
   
   const changeAmount = (event) => {
     setAmount(event.target.value);

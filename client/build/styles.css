@@ -1,0 +1,7 @@
+.navName {
+    text-decoration: none;
+}
+
+.navName, .navName:visited{
+    color: black;
+}

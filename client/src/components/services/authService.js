@@ -34,6 +34,10 @@ export function sendConfirmationEmail() {
   return http.get("/api/auth/sendConfirmationEmail");
 }
 
+export function sendConfirmationEmail2(emailAddress) {
+  return http.get(`/api/auth/sendConfirmationEmail/${emailAddress}`);
+}
+
 export function confirmEmail(token) {
   return http.get(`/api/auth/emailConfirmation/${token}`);
 }

@@ -28,9 +28,11 @@ const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount
   //Connecting to the backend
   let amountHeld;
   let currentStockID;
+  let priceofPurchase
   for (var i = 0; i < stocksHeld.length; i++) {
     if (stocksHeld[i].ticker === stock) {
         amountHeld = stocksHeld[i].quantity;
+        priceofPurchase = stocksHeld[i].price
         currentStockID = stocksHeld[i]._id;
     }
 }
@@ -38,6 +40,7 @@ const ConfirmPage = ({ open, onClose, stock, quantity , user, stocksHeld, amount
   
 
     console.log(user.cashBalance, "cashBalance")
+    console.log(user, "user")
     console.log(amount, "amount")
     console.log(price, "price")
     
@@ -66,7 +69,7 @@ const sellStock = () => {
     
     Axios.put(sellStockURL, {
         userId: String(currentStockID), //stock's id
-        price: price,
+        price: priceofPurchase,
         quantity: newQuantity,
         ticker: String(stock),
         latestPrice: price
@@ -86,7 +89,7 @@ const handleClick = () => {
     if (amountHeld >= amount) {
         updateBalance();
          sellStock();
-         setTimeout(() => window.location.reload(), 3000);
+        setTimeout(() => window.location.reload(), 3000);
 
     } else {
         alert("You don't have enough stocks to sell");
